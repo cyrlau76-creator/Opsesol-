@@ -1,0 +1,28 @@
+{
+  "business": "OPSESOL (SASU) — diagnostic et audit d'exploitation citerne / vrac liquide. Montants en euros HT. Ici, 1 « jour » du rapport = 1 MOIS : days_per_month = 1, donc « units a day » se lit « jours facturés par mois ».",
+  "unit": "jour facturé",
+  "price": 600,
+  "variable": [
+    {"label": "Déplacement par jour d'intervention (ESTIMATION : ~60 km aller-retour, barème kilométrique ~0,60 €/km)", "cost": 36},
+    {"label": "Petits frais par mission (impression, repas) (ESTIMATION)", "cost": 10}
+  ],
+  "fixed_monthly": [
+    {"label": "Expert-comptable SASU (ESTIMATION, devis à obtenir)", "cost": 120},
+    {"label": "Assurance RC pro (ESTIMATION ~300 €/an, devis à obtenir)", "cost": 25},
+    {"label": "Banque pro (ESTIMATION)", "cost": 15},
+    {"label": "Plateforme de facturation électronique (ESTIMATION)", "cost": 15},
+    {"label": "Logiciels, téléphone, nom de domaine (ESTIMATION, business plan : 150-250 €/an + téléphone)", "cost": 20}
+  ],
+  "startup": [
+    {"label": "Rédaction des statuts / création (ESTIMATION, souvent incluse ou facturée par l'expert-comptable)", "cost": 500},
+    {"label": "Annonce légale (ESTIMATION, forfait réglementé selon département)", "cost": 150},
+    {"label": "Immatriculation au greffe (ESTIMATION)", "cost": 40},
+    {"label": "Site vitrine + nom de domaine (business plan : 300-600 €)", "cost": 450},
+    {"label": "Flyer conception + impression (business plan : 150-400 €)", "cost": 250},
+    {"label": "Cartes de visite, supports (business plan : 100-200 €)", "cost": 150}
+  ],
+  "days_per_month": 1,
+  "capacity_per_day": 2,
+  "plan_per_day": 1,
+  "ramp_per_day": [0, 0, 0.5, 0.5, 1, 0.5, 0, 1, 1, 1, 1, 1]
+}
