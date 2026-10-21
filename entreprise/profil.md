@@ -39,10 +39,12 @@
 
 ## Offre et tarifs
 
+**Offre phare de l'année de test : Check-up Exploitation Citerne, 1 200 € HT** (3 places pilotes à 900 € HT contre un avis écrit), rendu en 10 jours ouvrés, garanti « 3 actions utiles ou pas payé ». Option : journée sur site 700 € HT. Détail : `founder/offer.md`. La grille ci-dessous reste la référence pour plus tard.
+
 | Prestation | Durée type | Tarif HT |
 |---|---|---|
 | Audit d'exploitation express | 1-2 jours | 550 – 1 100 € |
-| Audit d'exploitation complet | 3-5 jours | 1 800 – 3 500 € |
+| Audit d'exploitation complet | 3-5 jours | 3 000 – 3 500 € (plancher 600 €/jour) |
 | Formation d'équipe (technique / réglementaire) | 1 jour | 800 – 1 200 € |
 | Mission de transition | Sur devis | TJM 500 – 700 € |
 | Journée de conseil ad hoc | 1 jour | 500 – 700 € |
