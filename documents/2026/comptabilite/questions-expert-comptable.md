@@ -26,6 +26,7 @@ Peu d'opérations : 1 à 5 factures et une vingtaine de dépenses par mois.
 12. Quelle plateforme agréée de facturation électronique conseillez-vous, et est-elle reliée à votre outil ?
 
 ## 4. Impôt et rémunération
+0. Je prévois de quitter mon poste salarié vers octobre 2027 pour vivre de la SASU : comment me rémunérer chaque mois (salaire de président, dividendes, autre statut) et à quel coût ?
 13. Président non rémunéré la première année : conséquences (protection sociale, cumul avec mon salaire) ?
 14. Le moment venu, quel arbitrage entre salaire et dividendes pour mon niveau de revenu ?
 15. Quels frais pourrai-je déduire (véhicule, téléphone, bureau à domicile, formation) ?

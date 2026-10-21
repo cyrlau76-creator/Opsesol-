@@ -1,0 +1,68 @@
+{
+  "business": "OPSESOL (SASU) — ANNÉE 2, à temps plein après départ du poste salarié. Euros HT. 1 « jour » de l'outil = 1 mois.",
+  "unit": "jour facturé",
+  "price": 600,
+  "variable": [
+    {
+      "label": "Déplacement par jour d'intervention (ESTIMATION : ~60 km aller-retour, barème kilométrique ~0,60 €/km)",
+      "cost": 36
+    },
+    {
+      "label": "Petits frais par mission (impression, repas) (ESTIMATION)",
+      "cost": 10
+    }
+  ],
+  "fixed_monthly": [
+    {
+      "label": "Expert-comptable SASU (ESTIMATION, devis à obtenir)",
+      "cost": 120
+    },
+    {
+      "label": "Assurance RC pro (ESTIMATION ~300 €/an, devis à obtenir)",
+      "cost": 25
+    },
+    {
+      "label": "Banque pro (ESTIMATION)",
+      "cost": 15
+    },
+    {
+      "label": "Plateforme de facturation électronique (ESTIMATION)",
+      "cost": 15
+    },
+    {
+      "label": "Logiciels, téléphone, nom de domaine (ESTIMATION, business plan : 150-250 €/an + téléphone)",
+      "cost": 20
+    },
+    {
+      "label": "Prévoyance + mutuelle du président, plus couvert par l'employeur (ESTIMATION)",
+      "cost": 150
+    },
+    {
+      "label": "Prospection : salons, déplacements commerciaux, LinkedIn (ESTIMATION)",
+      "cost": 150
+    }
+  ],
+  "startup": [
+    {
+      "label": "Matériel et outils complémentaires au passage à temps plein (ESTIMATION)",
+      "cost": 1000
+    }
+  ],
+  "days_per_month": 1,
+  "capacity_per_day": 14,
+  "plan_per_day": 11,
+  "ramp_per_day": [
+    3,
+    4,
+    5,
+    6,
+    6,
+    7,
+    5,
+    8,
+    9,
+    10,
+    11,
+    11
+  ]
+}

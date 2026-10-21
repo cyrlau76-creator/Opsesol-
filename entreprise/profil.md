@@ -59,6 +59,8 @@ organisation, management, pilotage) avec plan d'actions et 5 indicateurs.
 
 - Objectif de revenu : 3 500 € net / mois à terme (≈ 4 500 € de CA mensuel, 7 à 9 jours facturés).
 - Année 1 = phase de test : 5 à 10 jours d'intervention, premières références.
+- **Quitter le poste salarié d'ici octobre 2027**, si les critères de départ sont réunis (voir `founder/transition.md`).
+- Objectif de CA à temps plein : ~5 900 €/mois, soit ~11 jours facturés par mois.
 
 ## Prérequis bloquant avant toute prospection
 
