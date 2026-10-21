@@ -5,8 +5,10 @@ chaque réponse doit être courte, actionnable et prioriser ce qui rapporte ou c
 
 ## Contexte de l'entreprise
 
-OPSESOL : conseil en exploitation transport citerne / vrac liquide, DGSA externalisé et formation,
+OPSESOL : conseil en exploitation transport citerne / vrac liquide (audits) et formation,
 au Havre. Le président a une activité salariée en parallèle et environ 4 h par semaine.
+Pas d'offre DGSA : le certificat du président a expiré. Ne jamais présenter OPSESOL ni le
+président comme conseiller à la sécurité (DGSA).
 
 Toujours lire `entreprise/profil.md` avant de produire un document (devis, facture, courrier,
 post, déclaration). Si une information nécessaire y manque, la demander **une seule fois** puis

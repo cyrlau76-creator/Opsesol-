@@ -12,5 +12,7 @@ Ils restent sur claude.ai, accessibles uniquement par le dirigeant. Les agents s
 | TankOps — Suivi d'activité | https://claude.ai/artifact/FKsi48oywUELn25B7oezdx | Suivi des missions et du CA mensuel |
 | Flyer TankOps | https://claude.ai/artifact/Q7kxfnk2uaGA7urzAuZZNi | Support de présentation |
 
+Les pages Business Plan, Flyer TankOps et OPSESOL Formation mentionnent encore une offre DGSA, retirée le 21/10/2026 (certificat expiré) : ne pas la reprendre.
+
 Règle : ne jamais recopier dans ce dépôt le nom de l'employeur actuel, les candidatures en cours
 ou le détail des échanges avec des prospects déjà contactés.

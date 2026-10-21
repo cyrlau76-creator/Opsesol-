@@ -3,7 +3,7 @@
 À envoyer à 2 ou 3 cabinets (en ligne ou locaux, Le Havre). Joindre le résumé de l'activité ci-dessous.
 
 **Résumé à joindre** : SASU en création, conseil en exploitation transport citerne / vrac liquide,
-DGSA externalisé et formation professionnelle. Président unique, non rémunéré au démarrage,
+audits d'exploitation et formation professionnelle. Président unique, non rémunéré au démarrage,
 activité salariée en parallèle. CA prévisionnel : environ 20 000 € en année 1, 50 000 € en année 2.
 Peu d'opérations : 1 à 5 factures et une vingtaine de dépenses par mois.
 
@@ -17,7 +17,7 @@ Peu d'opérations : 1 à 5 factures et une vingtaine de dépenses par mois.
 ## 2. Création de la société
 6. Immatriculation en décembre 2026 ou en janvier 2027 : que recommandez-vous, et pour quel premier exercice ?
 7. Quel capital et quelle domiciliation conseillez-vous (domicile, société de domiciliation) ?
-8. Comment rédiger l'objet social pour couvrir conseil, DGSA, formation professionnelle et enseignement ?
+8. Comment rédiger l'objet social pour couvrir conseil, formation professionnelle et enseignement ?
 9. Quelles clauses des statuts recommandez-vous (délai d'approbation des comptes, rémunération du président) ?
 
 ## 3. TVA

@@ -11,7 +11,7 @@
 | # | Étape | Points d'attention | Source | Statut |
 |---|---|---|---|---|
 | 1 | Choisir l'expert-comptable (2-3 devis) | Lui faire valider les étapes 2 et 9 avant signature des statuts | — | [ ] |
-| 2 | Rédiger les statuts, fixer le capital | Objet social : conseil, DGSA externalisé, formation professionnelle, enseignement. Prévoir la date de clôture et la durée du 1er exercice (voir section 2.6) | [S9] [S10] | [ ] |
+| 2 | Rédiger les statuts, fixer le capital | Objet social : conseil, formation professionnelle, enseignement. Prévoir la date de clôture et la durée du 1er exercice (voir section 2.6) | [S9] [S10] | [ ] |
 | 3 | Domiciliation du siège (Le Havre) | Domicile du président, société de domiciliation ou local. Domicile : vérifier bail / règlement de copropriété (à vérifier) | — | [ ] |
 | 4 | Ouvrir le compte bancaire pro et déposer le capital | Dépôt des apports en numéraire dans les 8 jours de leur réception, sur compte au nom de la société en formation (banque ou notaire) ; fonds débloqués sur présentation du Kbis | [S9] | [ ] |
 | 5 | Signer les statuts (mention du dépôt des fonds) | Enregistrement au SIE non obligatoire en principe depuis 2015 (sauf cas particuliers) | [S9] | [ ] |
@@ -21,7 +21,7 @@
 | 9 | Choisir le régime de TVA et l'option de clôture | Dans le dossier d'immatriculation. Options réalistes : franchise en base ou réel normal (le réel simplifié disparaît au 01/01/2027, voir 2.1) | [S2] [S3] | [ ] |
 | 10 | Réception du Kbis, déblocage du capital, création de l'espace professionnel impots.gouv.fr | — | [S9] | [ ] |
 | 11 | Déclaration initiale de CFE 1447-C-SD | Au plus tard le 31/12 de l'année de création | [S6] [S7] | [ ] |
-| 12 | Souscrire la RC pro | Avant la première mission ; couvrir conseil, DGSA, formation | — | [ ] |
+| 12 | Souscrire la RC pro | Avant la première mission ; couvrir conseil et formation | — | [ ] |
 | 13 | Choisir une plateforme agréée de facturation électronique | Réception obligatoire depuis le 01/09/2026 pour toute entreprise : à faire dès l'immatriculation | [S4] [S5] | [ ] |
 | 14 | Déclaration d'activité de formation (Mon Activité Formation / DREETS) | Seulement si la formation est facturée via la SASU : dans les 3 mois suivant la signature de la 1re convention de formation (donc après levée du prérequis bloquant) | [S12] (secondaire, à vérifier) | [ ] |
 | 15 | Attestation d'exonération de TVA formation (3511-SD, à la DREETS) | Uniquement si l'exonération est visée et la déclaration d'activité faite ; effet à la réception de la demande ; silence 3 mois = accord | [S11] | [ ] |

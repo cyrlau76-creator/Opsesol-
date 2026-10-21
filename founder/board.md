@@ -1,5 +1,10 @@
 # Conseil OPSESOL — synthèse du président de séance
 
+> **Mise à jour du 21/10/2026 : le DGSA externalisé est retiré de l'offre** (certificat du fondateur
+> expiré). Le désaccord ci-dessous est donc tranché dans le sens des lenses Offre et Produit. L'offre
+> phare reste le diagnostic suivi d'un audit express. Le Monopole perd son marché récurrent : la
+> question de la durabilité repose désormais sur le référentiel propriétaire du diagnostic.
+
 ## Le vote
 
 **3 FUND IF, 0 PASS · score moyen 4/10** (Offre 4, Monopole 4, Produit 4).
@@ -30,11 +35,11 @@ Les deux ont raison sur un point. Le DGSA externalisé est l'offre la plus strat
 - [ ] **Un parcours client écrit** de bout en bout, avec un délai de réponse annoncé et tenu.
 - [ ] **La preuve avant le prix** : 2 ou 3 diagnostics pilotes avec résultat chiffré et témoignage écrit ; au moins 3 entretiens qualifiés et, pour le Monopole, une lettre d'intention. *(Soumis au prérequis bloquant.)* → `/founder-launch`
 - [ ] **Le plan recalé sur la capacité réelle** : 5 à 10 jours d'intervention en année 1, CA et marge recalculés. → `/founder-cfo`
-- [ ] **Connaître la concurrence DGSA externalisée** : acteurs, prix, disponibilité, plaintes ; évolution du marché après l'arrêt de la chimie à Port-Jérôme. → `/founder-competitors`
+- [ ] **Connaître la concurrence sur l'audit d'exploitation citerne** : acteurs, prix, disponibilité, plaintes ; évolution du marché après l'arrêt de la chimie à Port-Jérôme. → `/founder-competitors`
 - [ ] **Construire un actif** : faire du diagnostic un référentiel citerne / vrac propriétaire, avec un benchmark entre clients. *(Monopole.)*
 
 ## La version la plus forte que voit le conseil
 
-Ce n'est pas tout à fait ce qui a été présenté. Le conseil voit un **diagnostic d'exploitation citerne / vrac liquide, vendu à prix fixe**, réalisé à distance et rendu par écrit sous un délai garanti, pour les transporteurs de taille moyenne de l'axe Seine qui ne passent pas le test de conflit en rouge. Chaque diagnostic alimente un référentiel propriétaire qui, avec le temps, permet de dire à un transporteur où il se situe face à ses pairs : c'est le seul début de barrière à l'entrée du dossier. Le DGSA externalisé devient la deuxième marche, récurrente, quand la disponibilité le permet (année 2 ou départ du poste salarié). Les écoles restent un canal de réseau, pas une ligne de revenus.
+Ce n'est pas tout à fait ce qui a été présenté. Le conseil voit un **diagnostic d'exploitation citerne / vrac liquide, vendu à prix fixe**, réalisé à distance et rendu par écrit sous un délai garanti, pour les transporteurs de taille moyenne de l'axe Seine qui ne passent pas le test de conflit en rouge. Chaque diagnostic alimente un référentiel propriétaire qui, avec le temps, permet de dire à un transporteur où il se situe face à ses pairs : c'est le seul début de barrière à l'entrée du dossier. La deuxième marche, récurrente, reste à trouver (par exemple un suivi trimestriel des indicateurs du diagnostic), quand la disponibilité le permet. Les écoles restent un canal de réseau, pas une ligne de revenus.
 
 Mémos complets : `founder/board/offers.md`, `founder/board/monopoly.md`, `founder/board/product.md`.
