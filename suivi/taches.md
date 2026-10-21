@@ -1,7 +1,15 @@
 # Tâches en cours
 
-## Cette semaine
-- [ ] Compléter `entreprise/profil.md` (10 min)
-- [ ] Lancer `/echeances` pour générer le calendrier des obligations
+## Priorité 1 — prérequis bloquant
+- [ ] Rassembler contrat de travail, avenants, convention collective, règlement intérieur, charte informatique
+- [ ] Remplir la grille de relecture du contrat (lien dans `entreprise/references.md`)
+- [ ] Consulter un avocat en droit du travail si une clause pose question
+- [ ] Passer chaque prospect du pipeline au test de conflit d'intérêts
+
+## Priorité 2 — création de la SASU (en parallèle)
+- [ ] Faire valider l'objet social (conseil, DGSA, formation, enseignement) et le régime de TVA par un expert-comptable
+- [ ] Obtenir un devis d'assurance RC pro
+- [ ] Lancer `/echeances` pour la checklist de création
 
 ## Plus tard
+- [ ] Choisir le statut pour les interventions en école en année 1 (vacataire à titre personnel ou via OPSESOL)

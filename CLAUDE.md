@@ -5,9 +5,17 @@ chaque réponse doit être courte, actionnable et prioriser ce qui rapporte ou c
 
 ## Contexte de l'entreprise
 
+OPSESOL : conseil en exploitation transport citerne / vrac liquide, DGSA externalisé et formation,
+au Havre. Le président a une activité salariée en parallèle et environ 4 h par semaine.
+
 Toujours lire `entreprise/profil.md` avant de produire un document (devis, facture, courrier,
 post, déclaration). Si une information nécessaire y manque, la demander **une seule fois** puis
-proposer de l'ajouter au profil.
+proposer de l'ajouter au profil. Les documents détaillés (business plan, offre formation) sont
+listés dans `entreprise/references.md`.
+
+**Prérequis bloquant** : tant que la section « Prérequis bloquant » du profil n'est pas cochée,
+aucun agent ne prépare de message à un prospect, de devis ou de facture. Il le rappelle et
+propose d'avancer sur ce prérequis à la place.
 
 ## Organisation des agents
 
