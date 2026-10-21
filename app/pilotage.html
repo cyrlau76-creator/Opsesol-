@@ -1,0 +1,395 @@
+<title>OPSESOL Pilotage</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<style>
+/* Layout : en-tête marque + onglets collants, une colonne de cartes (max 980px), comme le Cockpit OPSESOL */
+:root{
+  --paper:#F1F4F9; --card:#FFFFFF; --ink:#0A2A52; --muted:#4A5C78; --line:#D5DDE8;
+  --accent:#0A2A52; --on-accent:#FFFFFF;
+  --gold:#D6A10F; --gold-ink:#7A5200; --gold-soft:#FBF0D5;
+  --red:#B3211F; --red-soft:#FBE3E2; --green:#1F7A5A; --green-soft:#DCF0E6; --blue-soft:#E4ECF7;
+  --s0:#B3211F; --s1:#D9642B; --s2:#D6A10F; --s3:#4E9F7E; --s4:#1F7A5A;
+  --font-body:"Barlow", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-head:"Barlow Condensed", "Arial Narrow", "Barlow", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1A2C; --card:#172740; --ink:#E9EFF8; --muted:#9DB0CB; --line:#2C3F5E;
+    --accent:#8DB3EE; --on-accent:#0A1B33;
+    --gold:#E0AC2E; --gold-ink:#F0C860; --gold-soft:#3A3010;
+    --red:#F0706C; --red-soft:#40201F; --green:#4FBF95; --green-soft:#143528; --blue-soft:#1D3252;
+    --s0:#D84A46; --s1:#E2743A; --s2:#D9A81C; --s3:#4E9F7E; --s4:#2E9B73;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1A2C; --card:#172740; --ink:#E9EFF8; --muted:#9DB0CB; --line:#2C3F5E;
+  --accent:#8DB3EE; --on-accent:#0A1B33;
+  --gold:#E0AC2E; --gold-ink:#F0C860; --gold-soft:#3A3010;
+  --red:#F0706C; --red-soft:#40201F; --green:#4FBF95; --green-soft:#143528; --blue-soft:#1D3252;
+  --s0:#D84A46; --s1:#E2743A; --s2:#D9A81C; --s3:#4E9F7E; --s4:#2E9B73;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.45 var(--font-body);-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+h1,h2,h3,p{margin:0}
+.top{display:flex;align-items:baseline;gap:10px;padding-block:18px 10px;flex-wrap:wrap}
+.brand{font:700 32px/1 var(--font-head);letter-spacing:.03em}
+.sub{font:500 17px/1 var(--font-head);color:var(--muted)}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding-block:6px 8px;border-bottom:1px solid var(--line);margin-bottom:16px}
+.tab{min-height:46px;border:0;background:transparent;font:600 16px/1 var(--font-head);color:var(--muted);border-bottom:4px solid transparent;cursor:pointer;padding:0 2px}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:14px;min-width:0}
+.h2{font:700 24px/1.1 var(--font-head);letter-spacing:.01em;text-wrap:balance}
+.h3{font:600 19px/1.2 var(--font-head)}
+.muted{color:var(--muted)}.small{font-size:14px}
+.row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.stack{display:grid;gap:10px}
+.chip{display:inline-block;padding:2px 10px;border-radius:999px;font:600 13px/1.5 var(--font-body);white-space:nowrap}
+.chip.red{background:var(--red-soft);color:var(--red)}.chip.gold{background:var(--gold-soft);color:var(--gold-ink)}
+.chip.green{background:var(--green-soft);color:var(--green)}.chip.grey{background:var(--blue-soft);color:var(--muted)}
+.btn{min-height:44px;padding:0 16px;border-radius:6px;border:1.5px solid var(--accent);background:var(--accent);color:var(--on-accent);font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.sm{min-height:38px;padding:0 12px;font-size:15px}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.link{background:none;border:0;padding:6px 0;color:var(--accent);text-decoration:underline;cursor:pointer;font-size:14px;min-height:36px}
+label.f{display:block;font-size:13px;color:var(--muted);margin-bottom:3px}
+input[type=text],select,textarea{width:100%;min-height:44px;padding:8px 10px;border:1.5px solid var(--line);border-radius:6px;background:var(--card);font-size:16px}
+textarea{min-height:80px;resize:vertical}
+.gate{border-left:6px solid var(--red);background:var(--red-soft);color:var(--ink)}
+.gate.ok{border-left-color:var(--green);background:var(--green-soft)}
+.check{display:flex;gap:10px;align-items:flex-start;padding-block:6px;cursor:pointer}
+.check input{width:22px;height:22px;margin:2px 0 0;flex:none;accent-color:var(--green)}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media(max-width:620px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.kpi b{font:700 30px/1 var(--font-head);display:block;font-variant-numeric:tabular-nums}
+.dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:15px}
+.dl dt{font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}.dl dd{margin:0;color:var(--muted)}
+.task{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start;padding-block:8px;border-top:1px solid var(--line)}
+.task:first-child{border-top:0}
+.task.done .t{text-decoration:line-through;color:var(--muted)}
+.p{border:1px solid var(--line);border-radius:10px;background:var(--card);margin-bottom:8px}
+.p summary{list-style:none;cursor:pointer;padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center;min-height:44px}
+.p summary::-webkit-details-marker{display:none}
+.p .pn{font-weight:600}.p .pz{grid-column:1;font-size:14px;color:var(--muted)}
+.p .pc{grid-row:1 / span 2;grid-column:2;display:flex;flex-direction:column;gap:4px;align-items:flex-end}
+.pbody{padding:0 14px 14px;display:grid;gap:12px}
+.cq{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;font-size:15px}
+.seg3{display:inline-grid;grid-template-columns:repeat(3,auto);gap:4px}
+.seg3 button{min-height:36px;min-width:52px;border:1.5px solid var(--line);border-radius:6px;background:var(--card);cursor:pointer;font-weight:600;font-size:14px}
+.seg3 button[aria-pressed="true"].non{background:var(--green);color:#fff;border-color:transparent}
+.seg3 button[aria-pressed="true"].oui{background:var(--red);color:#fff;border-color:transparent}
+.seg3 button[aria-pressed="true"].nsp{background:var(--gold);color:#2A1E00;border-color:transparent}
+.fgrid{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:620px){.fgrid.c2{grid-template-columns:1fr 1fr}.fgrid.c3{grid-template-columns:2fr 1fr 1fr}}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.filters button{min-height:36px;padding:0 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);cursor:pointer;font-size:14px;font-weight:600}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:transparent}
+.gscore{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap}
+.gnum{font:700 56px/.9 var(--font-head);font-variant-numeric:tabular-nums}
+.dom{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:12px}
+.dom div{text-align:center;border-top:4px solid var(--line);padding-top:6px;min-width:0}
+.dom b{font:700 22px/1 var(--font-head);display:block}
+.dom span{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.q{border-top:1px solid var(--line);padding-block:12px}
+.q .qt{font-weight:600}.q .qe{font-style:italic;color:var(--muted);font-size:14px;margin:2px 0 8px}
+.seg{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;max-width:420px}
+.sb{min-height:42px;border:1.5px solid var(--line);border-radius:6px;background:var(--card);cursor:pointer;font:600 18px/1 var(--font-head)}
+.sb[aria-pressed="true"]{color:#fff;border-color:transparent}
+.sb.s0[aria-pressed="true"]{background:var(--s0)}.sb.s1[aria-pressed="true"]{background:var(--s1)}
+.sb.s2[aria-pressed="true"]{background:var(--s2);color:#2A1E00}.sb.s3[aria-pressed="true"]{background:var(--s3)}
+.sb.s4[aria-pressed="true"]{background:var(--s4)}.sb.sna{font-size:14px}.sb.sna[aria-pressed="true"]{background:var(--muted)}
+.agents{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px}
+@media(max-width:620px){.agents{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ag{border:1.5px solid var(--line);border-radius:8px;background:var(--card);padding:10px;text-align:left;cursor:pointer;min-height:44px;min-width:0}
+.ag b{display:block;font:600 17px/1.1 var(--font-head)}.ag span{font-size:13px;color:var(--muted)}
+.ag[aria-pressed="true"]{border-color:var(--gold);box-shadow:inset 0 0 0 1.5px var(--gold)}
+.chat{display:grid;gap:10px;margin-block:12px}
+.msg{padding:10px 12px;border-radius:10px;white-space:pre-wrap;overflow-wrap:anywhere;max-width:92%;font-size:15px}
+.msg.me{justify-self:end;background:var(--blue-soft)}
+.msg.ai{justify-self:start;background:var(--card);border:1px solid var(--line)}
+.msg.err{border-color:var(--red);color:var(--red)}
+.sugg{display:flex;gap:6px;flex-wrap:wrap}
+.sugg button{min-height:36px;padding:4px 12px;border-radius:999px;border:1.5px dashed var(--line);background:transparent;cursor:pointer;font-size:14px;text-align:left}
+.notice{background:var(--gold-soft);color:var(--gold-ink);border-radius:8px;padding:10px 12px;font-size:14px}
+.foot{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap" id="app"></div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- Référentiel ---------- */
+var STAGES=["Identifié","Test de conflit OK","Contacté","RDV","Proposition","Gagné","Perdu"];
+var CQ=[
+ "Est-il client, ancien client, prospect, partenaire ou concurrent de mon employeur ?",
+ "Est-il fournisseur ou sous-traitant de mon employeur ?",
+ "L'ai-je connu grâce à mon poste (contact, appel d'offres, donnée interne) ?",
+ "Ma mission toucherait-elle un sujet que je traite chez mon employeur ?",
+ "Mon employeur pourrait-il y voir une concurrence ou une fuite d'information ?"
+];
+var SC=[["Absent","Aucun dispositif formalisé ou aucune pratique fiable."],["Informel","La pratique dépend des habitudes ou d'une personne."],["Défini","La règle existe, mais son application ou ses preuves restent irrégulières."],["Maîtrisé","La pratique est régulière et prouvée dans la majorité des cas."],["Optimisé","La pratique est mesurée, pilotée et améliorée par les données."]];
+var DOMS=["Flux","Documents","Organisation","Management","Pilotage"];
+var Q=[
+ [0,"Les priorités quotidiennes sont-elles visibles et comprises par les personnes concernées ?"],
+ [0,"Les retards et urgences sont-ils traités selon une règle commune ?"],
+ [0,"Les responsabilités entre commercial, exploitation, conducteur et client sont-elles claires ?"],
+ [0,"Les informations nécessaires sont-elles disponibles avant le démarrage d'une opération ?"],
+ [0,"Les anomalies récurrentes font-elles l'objet d'une action corrective suivie ?"],
+ [1,"Les documents nécessaires sont-ils identifiés avant chaque opération ?"],
+ [1,"Les dates de validité et contrôles sont-ils tracés ?"],
+ [1,"Les exigences propres à chaque client ou site sont-elles centralisées ?"],
+ [1,"Une double vérification existe-t-elle pour les opérations sensibles ?"],
+ [1,"Les preuves de contrôle sont-elles conservées et faciles à retrouver ?"],
+ [2,"Les activités critiques disposent-elles d'une procédure courte et à jour ?"],
+ [2,"Les check-lists sont-elles réellement utilisées sur le terrain ?"],
+ [2,"Les remplacements et absences peuvent-ils être absorbés sans perte d'information ?"],
+ [2,"Les écarts entre pratique réelle et procédure sont-ils revus ?"],
+ [2,"Les documents ont-ils un propriétaire et une date de révision ?"],
+ [3,"Chaque collaborateur connaît-il ses priorités et son niveau d'autonomie ?"],
+ [3,"Les nouveaux arrivants disposent-ils d'un parcours d'intégration ?"],
+ [3,"Les réunions sont-elles courtes, préparées et orientées décisions ?"],
+ [3,"Les erreurs sont-elles analysées sans recherche immédiate de culpabilité ?"],
+ [3,"Les compétences critiques et besoins de formation sont-ils identifiés ?"],
+ [4,"Disposez-vous de cinq indicateurs maximum réellement utilisés pour décider ?"],
+ [4,"Les coûts de non-qualité, retards ou reprises sont-ils estimés ?"],
+ [4,"Chaque action possède-t-elle un responsable et une échéance ?"],
+ [4,"Les décisions prises sont-elles suivies jusqu'à leur clôture ?"],
+ [4,"Les outils numériques réduisent-ils effectivement les doubles saisies ?"]
+];
+var ECHEANCES=[
+ ["Fin oct.","Demander 2 ou 3 devis d'expert-comptable (liste de questions prête)"],
+ ["Nov.","Choisir l'expert-comptable, la date d'immatriculation (déc. 2026 ou janv. 2027) et la domiciliation"],
+ ["Déc.","Compte pro et dépôt du capital, signature des statuts, annonce légale"],
+ ["31/12/2026","Déclaration CFE 1447-C-SD, seulement si immatriculation en 2026"],
+ ["01/01/2027","Fin du régime simplifié de TVA : franchise en base ou réel normal"],
+ ["Janv. 2027","Dossier guichet unique, Kbis, RC pro, plateforme de facturation électronique"]
+];
+var PROFIL="OPSESOL, SASU en création au Havre (Le Havre et 30 km, missions à distance). Président : Cyril Laurent, salarié en parallèle, environ 4 h par semaine en année 1. Activité : conseil en exploitation transport citerne et vrac liquide (chimie, pétrochimie), DGSA externalisé, formation. Plus de 20 ans d'exploitation transport, DGSA certifié depuis 2015, ancien formateur de formateurs. Offre HT : audit express 1-2 j 550-1 100 € ; audit complet 3-5 j 1 800-3 500 € ; DGSA externalisé 550-1 100 €/mois ; formation d'équipe 800-1 200 €/j ; mission de transition TJM 500-700 € ; jamais sous 500 €/jour ; présenter des forfaits plutôt qu'un TJM. Objectif : 3 500 € net/mois à terme (environ 4 500 € de CA, 7 à 9 jours facturés). Année 1 : phase de test, 5 à 10 jours. Régime de TVA non choisi ; le régime simplifié disparaît au 01/01/2027. Exonération TVA formation : déclaration d'activité et attestation DREETS.";
+var COMMON="Règles : réponds en français, court et actionnable (le dirigeant a peu de temps). Tu prépares, le dirigeant valide : tu n'envoies, ne signes et ne déposes rien. Les taux, seuils et dates fiscales changent chaque année : signale « à vérifier sur impots.gouv.fr / urssaf.fr / service-public.fr » tout chiffre dont tu n'es pas sûr. Pour une décision à fort enjeu, recommande l'expert-comptable ou l'avocat. Ne cite jamais le nom de l'employeur actuel du dirigeant. Pas de tableaux Markdown : listes courtes et texte simple.";
+var AGENTS=[
+ {k:"direction",n:"Assistant de direction",d:"Priorités de la semaine",r:"Tu es l'assistant de direction. Tu tries les demandes, proposes au plus 3 actions par semaine avec une durée estimée, en commençant par l'obligatoire et daté, puis ce qui fait rentrer de l'argent, puis le développement.",s:["Quelles sont mes 3 priorités cette semaine ?","Que puis-je faire en 1 heure ce soir ?"]},
+ {k:"juriste",n:"Juriste SASU",d:"Statuts, formalités, contrats",r:"Tu es juriste spécialisé en SASU françaises : création (statuts, capital, domiciliation, annonce légale, guichet unique, bénéficiaires effectifs), décisions de l'associé unique, CGV, contrats de prestation, RGPD, cumul avec une activité salariée.",s:["Quelles clauses mettre dans mes statuts ?","Comment rédiger l'objet social ?"]},
+ {k:"compta",n:"Comptable et fiscal",d:"TVA, IS, rémunération",r:"Tu es l'assistant comptable et fiscal : régime de TVA, IS, arbitrage salaire et dividendes, frais, trésorerie, calendrier fiscal. Montre tes calculs et tes hypothèses.",s:["Franchise en base ou réel normal pour moi ?","Immatriculer en décembre ou en janvier ?"]},
+ {k:"facturation",n:"Facturation",d:"Devis, factures, relances",r:"Tu es l'agent de facturation : devis et factures conformes aux mentions obligatoires, numérotation continue F-AAAA-NNN et D-AAAA-NNN, avoirs, relances d'impayés à J+3, J+15, J+30.",s:["Quelles mentions doivent figurer sur ma facture ?","Prépare un modèle de devis pour un audit express"]},
+ {k:"commercial",n:"Commercial",d:"Offre, prospects, RDV",r:"Tu es le développeur commercial : clarifier l'offre, cibler, préparer les rendez-vous, rédiger des propositions et des messages courts (moins de 120 mots, deux variantes). Tu t'appuies sur la liste des prospects et leur test de conflit.",s:["Comment présenter mon offre DGSA externalisé ?","Quels prospects travailler en premier ?"]},
+ {k:"marketing",n:"Marketing",d:"LinkedIn, site, flyer",r:"Tu es l'agent marketing et contenu : posts LinkedIn de 120 à 200 mots (deux variantes), textes du site, calendrier éditorial léger (1 post par semaine au plus). Ton sincère, concret, sans jargon.",s:["Écris un post LinkedIn sur mon expertise citerne","Propose un titre de profil LinkedIn"]}
+];
+
+/* ---------- État ---------- */
+var S={prospects:[],taches:[],diags:{},prereq:{contrat:false,avocat:false,conflits:false},db:null,dbState:"loading",sample:null,sampleState:"loading",toolsOk:false};
+var ui={tab:"accueil",seg:"tous",diagP:"",agent:"direction",chats:{},busy:false,ctl:null,openP:{},newTask:""};
+try{var t=localStorage.getItem("opsesol-tab");if(t)ui.tab=t;var a=localStorage.getItem("opsesol-agent");if(a)ui.agent=a;}catch(e){}
+if(location.hash&&/^#(accueil|prospects|diagnostic|agents)$/.test(location.hash))ui.tab=location.hash.slice(1);
+
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function prereqOk(){var p=S.prereq;return !!(p.contrat&&p.avocat&&p.conflits);}
+function conflit(p){var c=p.conflit||{},any=false,all=true;for(var i=1;i<=5;i++){var v=c["q"+i];if(v==="oui"||v==="nsp")any=true;if(v!=="non")all=false;}return any?"bloque":all?"ok":"afaire";}
+function conflitChip(p){var v=conflit(p);return v==="ok"?'<span class="chip green">Conflit : aucun</span>':v==="bloque"?'<span class="chip red">Ne pas contacter</span>':'<span class="chip grey">Test à faire</span>';}
+function diagCalc(pid){
+  var d=S.diags[pid],a=(d&&d.answers)||{},dom=DOMS.map(function(){return{p:0,m:0};}),pts=0,max=0,n=0;
+  Q.forEach(function(q,i){var v=a["q"+(i+1)];if(v===undefined||v===null)return;n++;if(v==="na")return;dom[q[0]].p+=v;dom[q[0]].m+=4;pts+=v;max+=4;});
+  return {n:n,pct:max?Math.round(pts/max*100):null,dom:dom.map(function(x){return x.m?Math.round(x.p/x.m*100):null;})};
+}
+function lvl(p){return p==null?"grey":p<50?"red":p<75?"gold":"green";}
+
+/* ---------- Rendu ---------- */
+function render(){
+  var app=document.getElementById("app");
+  var y=window.scrollY,ae=document.activeElement,aid=ae&&ae.id;
+  var body=ui.tab==="prospects"?vProspects():ui.tab==="diagnostic"?vDiag():ui.tab==="agents"?vAgents():vAccueil();
+  app.innerHTML='<header class="top"><h1 class="brand">OPSESOL</h1><span class="sub">Pilotage</span></header>'+vTabs()+(S.dbState==="off"?'<p class="notice" style="margin-bottom:14px">Les données partagées ne sont pas disponibles dans cette vue : rien de ce que vous saisissez ne sera enregistré.</p>':"")+'<main>'+body+'</main>'+
+  '<footer class="foot">Les agents préparent, vous validez : rien n\'est envoyé, signé ni déposé depuis cette appli. Les chiffres fiscaux sont à confirmer avec l\'expert-comptable.</footer>';
+  window.scrollTo(0,y);
+  if(aid){var el=document.getElementById(aid);if(el){el.focus({preventScroll:true});}}
+  if(ui.tab==="agents"){var c=document.getElementById("chatEnd");if(c&&ui.scrollChat){c.scrollIntoView({block:"end"});ui.scrollChat=false;}}
+}
+function vTabs(){
+  var t=[["accueil","Accueil"],["prospects","Prospects"],["diagnostic","Diagnostic"],["agents","Agents"]];
+  return '<nav class="tabs" role="tablist">'+t.map(function(x){return '<button class="tab" role="tab" id="tab-'+x[0]+'" aria-selected="'+(ui.tab===x[0])+'" data-act="tab" data-v="'+x[0]+'">'+x[1]+'</button>';}).join("")+'</nav>';
+}
+function vGate(){
+  var ok=prereqOk(),p=S.prereq;
+  var item=function(k,l){return '<label class="check" for="pr-'+k+'"><input type="checkbox" id="pr-'+k+'" data-act="prereq" data-k="'+k+'"'+(p[k]?" checked":"")+'><span>'+l+'</span></label>';};
+  return '<section class="card gate'+(ok?" ok":"")+'"><div class="row"><h2 class="h2">'+(ok?"Prospection ouverte":"Prospection bloquée")+'</h2>'+(ok?'<span class="chip green">Prérequis levé</span>':'<span class="chip red">Prérequis à lever</span>')+'</div>'+
+  '<p class="small" style="margin-block:6px 4px">'+(ok?"Les agents peuvent préparer messages, devis et factures pour les prospects dont le test de conflit est vert.":"Tant que ces trois points ne sont pas cochés, les agents ne préparent ni message à un prospect, ni devis, ni facture.")+'</p>'+
+  item("contrat","Contrat de travail relu : exclusivité, non-concurrence, loyauté")+item("avocat","Avis de l'avocat obtenu, ou accord écrit de l'employeur si nécessaire")+item("conflits","Méthode du test de conflit validée pour chaque prospect")+'</section>';
+}
+function vAccueil(){
+  var open=S.taches.filter(function(t){return !t.done;}).sort(function(a,b){return (a.prio||9)-(b.prio||9)||String(a.text).localeCompare(String(b.text));});
+  var done=S.taches.filter(function(t){return t.done;});
+  var cnt=function(f){return S.prospects.filter(f).length;};
+  var h=vGate();
+  h+='<section class="card"><h2 class="h2" style="margin-bottom:10px">Pipeline</h2><div class="kpis">'+
+   '<div class="kpi"><span class="small muted">Prospects</span><b>'+S.prospects.length+'</b></div>'+
+   '<div class="kpi"><span class="small muted">Test de conflit vert</span><b>'+cnt(function(p){return conflit(p)==="ok";})+'</b></div>'+
+   '<div class="kpi"><span class="small muted">En discussion</span><b>'+cnt(function(p){return ["Contacté","RDV","Proposition"].indexOf(p.etape)>-1;})+'</b></div>'+
+   '<div class="kpi"><span class="small muted">Diagnostics</span><b>'+Object.keys(S.diags).filter(function(k){return diagCalc(k).n>0;}).length+'</b></div></div></section>';
+  h+='<section class="card"><div class="row" style="margin-bottom:6px"><h2 class="h2">Tâches</h2><span class="small muted">'+open.length+' ouverte'+(open.length>1?"s":"")+'</span></div>';
+  if(S.dbState==="loading")h+='<p class="muted">Chargement…</p>';
+  else if(!S.taches.length)h+='<p class="muted">Aucune tâche. Ajoutez la première ci-dessous, ou demandez à l\'assistant de direction.</p>';
+  h+='<div>'+open.concat(done).map(function(t){
+    var pr=t.prio===1?'<span class="chip red">P1</span>':t.prio===2?'<span class="chip gold">P2</span>':'<span class="chip grey">Plus tard</span>';
+    return '<div class="task'+(t.done?" done":"")+'"><input type="checkbox" id="tk-'+esc(t.id)+'" data-act="task" data-id="'+esc(t.id)+'"'+(t.done?" checked":"")+' style="width:22px;height:22px;margin-top:2px;accent-color:var(--green)"><label class="t" for="tk-'+esc(t.id)+'">'+esc(t.text)+'</label><span>'+pr+'</span></div>';
+  }).join("")+'</div>';
+  h+='<form id="taskForm" class="fgrid c3" style="margin-top:12px"><div><label class="f" for="nt-text">Nouvelle tâche</label><input type="text" id="nt-text" autocomplete="off" value="'+esc(ui.newTask)+'"></div><div><label class="f" for="nt-prio">Priorité</label><select id="nt-prio"><option value="1">P1</option><option value="2" selected>P2</option><option value="3">Plus tard</option></select></div><div style="align-self:end"><button class="btn" type="submit"'+(S.db?"":" disabled")+'>Ajouter</button></div></form></section>';
+  h+='<section class="card"><h2 class="h2" style="margin-bottom:10px">90 prochains jours</h2><dl class="dl">'+ECHEANCES.map(function(e){return '<dt>'+esc(e[0])+'</dt><dd>'+esc(e[1])+'</dd>';}).join("")+'</dl><p class="small muted" style="margin-top:10px">Aucune déclaration ni paiement avant l\'immatriculation. Détail et sources dans suivi/echeances.md.</p></section>';
+  return h;
+}
+function vProspects(){
+  var list=S.prospects.filter(function(p){return ui.seg==="tous"||p.segment===ui.seg;}).sort(function(a,b){return String(a.name).localeCompare(String(b.name),"fr");});
+  var f=[["tous","Tous"],["transporteur","Transporteurs"],["ecole","Écoles et centres"]];
+  var h=(prereqOk()?"":'<p class="notice" style="margin-bottom:12px">Prospection bloquée : faites le test de conflit, mais ne contactez personne tant que le prérequis de l\'accueil n\'est pas levé.</p>');
+  h+='<div class="filters" role="group" aria-label="Filtrer">'+f.map(function(x){return '<button data-act="seg" data-v="'+x[0]+'" aria-pressed="'+(ui.seg===x[0])+'">'+x[1]+'</button>';}).join("")+'</div>';
+  if(S.dbState==="loading")h+='<p class="muted">Chargement…</p>';
+  else if(!list.length)h+='<p class="card muted">Aucun prospect. Ajoutez-en un ci-dessous.</p>';
+  list.forEach(function(p){
+    var id=esc(p.id),blocked=!prereqOk()||conflit(p)!=="ok";
+    var st=STAGES.map(function(s,i){return '<option'+(p.etape===s?" selected":"")+((i>=2&&i<=5&&blocked&&p.etape!==s)?" disabled":"")+'>'+s+'</option>';}).join("");
+    var dc=diagCalc(p.id);
+    h+='<details class="p" data-pid="'+id+'"'+(ui.openP[p.id]?" open":"")+'><summary><span class="pn">'+esc(p.name)+'</span><span class="pz">'+esc(p.zone||"")+(p.profil?" · "+esc(p.profil):"")+'</span><span class="pc"><span class="chip grey">'+esc(p.etape||"Identifié")+'</span>'+conflitChip(p)+'</span></summary><div class="pbody">';
+    h+='<div><p class="h3" style="margin-bottom:6px">Test de conflit d\'intérêts</p><p class="small muted" style="margin-bottom:8px">Un seul « oui » ou « je ne sais pas » suffit pour ne pas contacter.</p><div class="stack">'+CQ.map(function(q,i){
+      var v=(p.conflit||{})["q"+(i+1)];
+      return '<div class="cq"><span>'+(i+1)+'. '+esc(q)+'</span><span class="seg3">'+[["non","Non"],["oui","Oui"],["nsp","?"]].map(function(o){return '<button class="'+o[0]+'" data-act="cq" data-id="'+id+'" data-q="q'+(i+1)+'" data-v="'+o[0]+'" aria-pressed="'+(v===o[0])+'" aria-label="'+o[1]+'">'+o[1]+'</button>';}).join("")+'</span></div>';
+    }).join("")+'</div></div>';
+    h+='<div class="fgrid c2"><div><label class="f" for="st-'+id+'">Étape</label><select id="st-'+id+'" data-act="stage" data-id="'+id+'">'+st+'</select></div><div><label class="f" for="nx-'+id+'">Prochaine action</label><input type="text" id="nx-'+id+'" data-act="field" data-f="next" data-id="'+id+'" value="'+esc(p.next||"")+'" autocomplete="off"></div></div>';
+    h+='<div><label class="f" for="no-'+id+'">Notes</label><textarea id="no-'+id+'" data-act="field" data-f="notes" data-id="'+id+'">'+esc(p.notes||"")+'</textarea></div>';
+    h+='<div class="row"><span class="small muted">Diagnostic : '+(dc.n?dc.n+"/25 réponses · "+(dc.pct==null?"—":dc.pct+" %"):"pas commencé")+'</span><span><button class="btn ghost sm" data-act="godiag" data-id="'+id+'">Ouvrir le diagnostic</button> <button class="btn ghost sm" data-act="askcom" data-id="'+id+'">Demander au commercial</button></span></div>';
+    h+='<div><button class="link" data-act="delp" data-id="'+id+'">Retirer ce prospect</button></div></div></details>';
+  });
+  h+='<section class="card" style="margin-top:14px"><h2 class="h3" style="margin-bottom:8px">Ajouter un prospect</h2><form id="pForm" class="fgrid c2"><div><label class="f" for="np-name">Entreprise</label><input type="text" id="np-name" autocomplete="off" required></div><div><label class="f" for="np-zone">Zone</label><input type="text" id="np-zone" autocomplete="off"></div><div><label class="f" for="np-prof">Profil</label><input type="text" id="np-prof" autocomplete="off"></div><div><label class="f" for="np-seg">Type</label><select id="np-seg"><option value="transporteur">Transporteur / chargeur</option><option value="ecole">École / centre</option></select></div><div><button class="btn" type="submit"'+(S.db?"":" disabled")+'>Ajouter</button></div></form></section>';
+  return h;
+}
+function vDiag(){
+  var opts=S.prospects.slice().sort(function(a,b){return String(a.name).localeCompare(String(b.name),"fr");});
+  if(!ui.diagP&&opts.length)ui.diagP=opts[0].id;
+  var p=S.prospects.filter(function(x){return x.id===ui.diagP;})[0];
+  var h='<section class="card"><label class="f" for="diagSel">Entreprise diagnostiquée</label><select id="diagSel" data-act="diagsel">'+opts.map(function(o){return '<option value="'+esc(o.id)+'"'+(o.id===ui.diagP?" selected":"")+'>'+esc(o.name)+'</option>';}).join("")+'</select><p class="small muted" style="margin-top:8px">Répondez selon la pratique observée chez le client, pas selon la procédure théorique. 0 Absent · 1 Informel · 2 Défini · 3 Maîtrisé · 4 Optimisé.</p></section>';
+  if(!p)return h+'<p class="card muted">Ajoutez d\'abord un prospect.</p>';
+  var c=diagCalc(p.id),a=((S.diags[p.id]||{}).answers)||{};
+  h+='<section class="card"><div class="gscore"><div><div class="small muted">Score global</div><div class="gnum">'+(c.pct==null?"—":c.pct+" %")+'</div></div><div class="small muted">'+c.n+' question'+(c.n>1?"s":"")+' sur 25'+(c.n<25?" · résultat provisoire":"")+'</div></div>'+
+   '<div class="dom">'+DOMS.map(function(d,i){var v=c.dom[i];return '<div style="border-top-color:var(--'+(v==null?"line":lvl(v)==="red"?"s0":lvl(v)==="gold"?"s2":"s4")+')"><b>'+(v==null?"—":v+"%")+'</b><span>'+d+'</span></div>';}).join("")+'</div>';
+  var low=[];Q.forEach(function(q,i){var v=a["q"+(i+1)];if(typeof v==="number"&&v<=1)low.push(i);});
+  if(low.length)h+='<p class="small" style="margin-top:12px"><b>Écarts majeurs :</b> '+low.slice(0,3).map(function(i){return "Q"+(i+1)+" ("+DOMS[Q[i][0]]+")";}).join(", ")+(low.length>3?" et "+(low.length-3)+" autre(s)":"")+'</p>';
+  h+='<div class="row" style="margin-top:12px"><span></span><button class="btn sm" data-act="askdiag" data-id="'+esc(p.id)+'"'+(c.n<10?" disabled":"")+'>Faire rédiger la restitution</button></div>'+(c.n<10?'<p class="small muted" style="text-align:right">Au moins 10 réponses pour la restitution.</p>':"")+'</section>';
+  DOMS.forEach(function(d,di){
+    h+='<section class="card"><h2 class="h2" style="margin-bottom:4px">'+(di+1)+'/5 · '+d+'</h2>';
+    for(var k=0;k<5;k++){var i=di*5+k,v=a["q"+(i+1)];
+      h+='<div class="q"><p class="qt">'+(i+1)+'. '+esc(Q[i][1])+'</p><div class="seg" role="group" aria-label="Score question '+(i+1)+'" style="margin-top:8px">'+[0,1,2,3,4].map(function(s){return '<button class="sb s'+s+'" data-act="score" data-q="q'+(i+1)+'" data-v="'+s+'" aria-pressed="'+(v===s)+'" title="'+SC[s][0]+'">'+s+'</button>';}).join("")+'<button class="sb sna" data-act="score" data-q="q'+(i+1)+'" data-v="na" aria-pressed="'+(v==="na")+'">N/A</button></div>'+(typeof v==="number"?'<p class="small muted" style="margin-top:4px">'+SC[v][0]+' : '+SC[v][1]+'</p>':"")+'</div>';
+    }
+    h+='</section>';
+  });
+  return h;
+}
+function vAgents(){
+  var ag=AGENTS.filter(function(x){return x.k===ui.agent;})[0]||AGENTS[0],turns=ui.chats[ag.k]||[];
+  var h='<div class="agents" role="group" aria-label="Choisir un agent">'+AGENTS.map(function(x){return '<button class="ag" data-act="agent" data-v="'+x.k+'" aria-pressed="'+(x.k===ag.k)+'"><b>'+x.n+'</b><span>'+x.d+'</span></button>';}).join("")+'</div>';
+  h+='<section class="card"><div class="row"><h2 class="h2">'+ag.n+'</h2>'+(turns.length?'<button class="link" data-act="clear">Nouvelle conversation</button>':"")+'</div>';
+  if(S.sampleState==="off")return h+'<p class="notice" style="margin-top:10px">Les agents ne sont pas disponibles dans cette vue. Ouvrez l\'appli dans claude.ai et autorisez-la à utiliser Claude.</p></section>';
+  h+='<p class="small muted" style="margin-top:4px">L\'agent voit le profil OPSESOL, vos tâches, vos prospects et vos diagnostics. Il peut ajouter une tâche à votre liste.'+(prereqOk()?"":" Prospection bloquée : il ne rédige ni message à un prospect, ni devis, ni facture.")+'</p>';
+  h+='<div class="chat" aria-live="polite">';
+  if(!turns.length)h+='<div class="sugg">'+ag.s.map(function(s,i){return '<button data-act="sugg" data-i="'+i+'">'+esc(s)+'</button>';}).join("")+'</div>';
+  turns.forEach(function(t){h+='<div class="msg '+(t.role==="user"?"me":"ai")+(t.err?" err":"")+'">'+esc(t.content)+'</div>';});
+  h+='<span id="chatEnd"></span></div>';
+  h+='<form id="chatForm"><label class="f" for="chatIn">Votre demande</label><textarea id="chatIn" placeholder="Ex. : prépare ma décision d\'immatriculation"'+(ui.busy?" disabled":"")+'>'+esc(ui.draft||"")+'</textarea><div class="row" style="margin-top:8px"><span class="small muted">'+(ui.busy?"L'agent réfléchit…":"Les réponses sont des brouillons à valider.")+'</span>'+(ui.busy?'<button class="btn ghost" type="button" data-act="stop">Arrêter</button>':'<button class="btn" type="submit"'+(S.sample?"":" disabled")+'>Envoyer</button>')+'</div></form></section>';
+  return h;
+}
+
+/* ---------- Écritures ---------- */
+function W(promise){if(promise&&promise.catch)promise.catch(function(e){flash("Enregistrement impossible ("+(e&&e.code||"erreur")+"). Réessayez.");});}
+function flash(msg){var n=document.createElement("p");n.className="notice";n.style.cssText="position:fixed;left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20";n.textContent=msg;document.body.appendChild(n);setTimeout(function(){n.remove();},4000);}
+function pRef(id){return S.db.doc("prospects/"+id);}
+function slug(s){return (String(s).normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40)||"p")+"-"+Date.now().toString(36);}
+
+/* ---------- Agents ---------- */
+function snapshotForAgent(){
+  var tasks=S.taches.filter(function(t){return !t.done;}).map(function(t){return "- [P"+(t.prio||3)+"] "+t.text;}).join("\n")||"(aucune)";
+  var pros=S.prospects.map(function(p){var d=diagCalc(p.id);return "- "+p.name+" ("+(p.segment==="ecole"?"école":"transporteur")+", "+(p.zone||"zone ?")+") : étape "+(p.etape||"Identifié")+", test de conflit "+({ok:"vert",bloque:"NE PAS CONTACTER",afaire:"à faire"})[conflit(p)]+(d.n?", diagnostic "+d.pct+" % ("+d.n+"/25)":"")+(p.next?", prochaine action : "+p.next:"");}).join("\n")||"(aucun)";
+  return "Profil : "+PROFIL+"\n\nPrérequis bloquant (compatibilité avec l'emploi salarié) : "+(prereqOk()?"LEVÉ.":"NON LEVÉ. Tu refuses de rédiger tout message à un prospect, devis ou facture, et tu proposes d'avancer sur le prérequis (relecture du contrat, avocat, test de conflit).")+" Ne jamais préparer de contact pour un prospect dont le test de conflit n'est pas vert.\n\nTâches ouvertes :\n"+tasks+"\n\nProspects :\n"+pros+"\n\nDate du jour : "+new Date().toLocaleDateString("fr-FR");
+}
+function send(text){
+  if(!S.sample||ui.busy||!text.trim())return;
+  var ag=AGENTS.filter(function(x){return x.k===ui.agent;})[0];
+  var turns=ui.chats[ag.k]||(ui.chats[ag.k]=[]);
+  turns.push({role:"user",content:text.trim()});
+  var ai={role:"assistant",content:"Réflexion…"};turns.push(ai);
+  ui.busy=true;ui.draft="";ui.scrollChat=true;render();
+  var intro="Tu es l'agent « "+ag.n+" » de l'application de pilotage OPSESOL. "+ag.r+"\n\n"+COMMON+"\n\n"+snapshotForAgent();
+  var history=turns.slice(0,-1).filter(function(t){return !t.err;}).slice(-12);
+  var input=[{role:"user",content:intro}].concat(history);
+  var opts={cache:false,signal:(ui.ctl=new AbortController()).signal,onText:function(u){ai.content=u.text;var els=document.querySelectorAll(".msg.ai");var last=els[els.length-1];if(last)last.textContent=u.text;}};
+  if(S.toolsOk&&S.db){delete opts.cache;opts.tools=[{name:"ajouter_tache",description:"Ajoute une tâche à la liste du dirigeant dans l'appli. Utilise-la seulement si le dirigeant le demande ou accepte. Renvoie l'identifiant créé.",inputSchema:{type:"object",properties:{texte:{type:"string",description:"La tâche, courte et actionnable"},priorite:{type:"integer",enum:[1,2,3],description:"1 = urgent, 2 = normal, 3 = plus tard"}},required:["texte"]},execute:function(inp){var tx=String(inp.texte||"").slice(0,200);if(!tx)throw new Error("texte vide");var pr=[1,2,3].indexOf(Number(inp.priorite))>-1?Number(inp.priorite):2;return S.db.collection("taches").add({text:tx,prio:pr,done:false,source:ag.n,created:new Date().toISOString()}).then(function(r){return {ok:true,id:r.id};});}}];}
+  S.sample(input,opts).then(function(r){ai.content=r.text+(r.truncated?"\n\n(Réponse coupée : demandez la suite.)":"");})
+  .catch(function(e){var c=e&&e.code;if(c==="cancelled"){ai.content=(e.text||"")+"\n\n(Arrêté.)";}else if(c==="not_granted"||c==="sampling_disabled"||c==="not_declared"||c==="capability_disabled"){S.sampleState="off";ai.content="Les agents ne sont pas autorisés dans cette vue.";ai.err=true;}else if(c==="tools_unavailable"){S.toolsOk=false;ai.content="Réessayez : l'ajout de tâche n'est pas disponible dans cette vue.";ai.err=true;}else if(c==="rate_limited"){ai.content="Trop de demandes pour le moment. Réessayez dans quelques minutes.";ai.err=true;}else{ai.content=(e&&e.text?e.text+"\n\n":"")+"La réponse a été interrompue. Renvoyez votre demande.";ai.err=true;}})
+  .then(function(){ui.busy=false;ui.ctl=null;ui.scrollChat=true;render();});
+}
+
+/* ---------- Événements ---------- */
+var app=document.getElementById("app");
+app.addEventListener("click",function(e){
+  var t=e.target.closest("[data-act]");if(!t)return;var act=t.dataset.act;
+  if(act==="tab"){ui.tab=t.dataset.v;try{localStorage.setItem("opsesol-tab",ui.tab);}catch(x){}render();window.scrollTo(0,0);}
+  else if(act==="seg"){ui.seg=t.dataset.v;render();}
+  else if(act==="cq"&&S.db){var o={};o[t.dataset.q]=t.dataset.v;var p=S.prospects.filter(function(x){return x.id===t.dataset.id;})[0];if(p&&(p.conflit||{})[t.dataset.q]===t.dataset.v)o[t.dataset.q]=null;ui.openP[t.dataset.id]=true;W(pRef(t.dataset.id).update({conflit:o,updated:new Date().toISOString()}));}
+  else if(act==="godiag"){ui.diagP=t.dataset.id;ui.tab="diagnostic";render();window.scrollTo(0,0);}
+  else if(act==="askcom"){var pp=S.prospects.filter(function(x){return x.id===t.dataset.id;})[0];ui.agent="commercial";ui.tab="agents";ui.draft="Prépare mon approche pour "+(pp?pp.name:"ce prospect")+" : angle d'offre, questions de découverte et objections probables.";render();window.scrollTo(0,0);}
+  else if(act==="askdiag"){var pd=S.prospects.filter(function(x){return x.id===t.dataset.id;})[0],a=((S.diags[t.dataset.id]||{}).answers)||{},c=diagCalc(t.dataset.id);
+    var lines=Q.map(function(q,i){var v=a["q"+(i+1)];return v===undefined?null:"Q"+(i+1)+" ["+DOMS[q[0]]+"] "+q[1]+" → "+(v==="na"?"N/A":v+"/4");}).filter(Boolean).join("\n");
+    ui.agent="commercial";ui.tab="agents";render();send("Rédige la restitution du diagnostic opérationnel de "+(pd?pd.name:"ce client")+" : score global "+c.pct+" %, par domaine "+DOMS.map(function(d,i){return d+" "+(c.dom[i]==null?"—":c.dom[i]+" %");}).join(", ")+". Donne trois priorités avec action immédiate, responsable type et échéance, puis la mission OPSESOL qui y répond.\n\nRéponses :\n"+lines);}
+  else if(act==="delp"&&S.db){if(t.dataset.confirm){W(pRef(t.dataset.id).delete());W(S.db.doc("diags/"+t.dataset.id).delete());}else{t.dataset.confirm="1";t.textContent="Confirmer le retrait";}}
+  else if(act==="score"&&S.db&&ui.diagP){var cur=((S.diags[ui.diagP]||{}).answers)||{},v=t.dataset.v==="na"?"na":parseInt(t.dataset.v,10),ans={};for(var k in cur)ans[k]=cur[k];if(ans[t.dataset.q]===v)delete ans[t.dataset.q];else ans[t.dataset.q]=v;
+    S.diags[ui.diagP]={answers:ans};render();W(S.db.doc("diags/"+ui.diagP).set({answers:ans,updated:new Date().toISOString()}));}
+  else if(act==="agent"){ui.agent=t.dataset.v;try{localStorage.setItem("opsesol-agent",ui.agent);}catch(x){}render();}
+  else if(act==="sugg"){var ag=AGENTS.filter(function(x){return x.k===ui.agent;})[0];send(ag.s[+t.dataset.i]);}
+  else if(act==="stop"){if(ui.ctl)ui.ctl.abort();}
+  else if(act==="clear"){ui.chats[ui.agent]=[];render();}
+});
+app.addEventListener("change",function(e){
+  var t=e.target,act=t.dataset.act;
+  if(act==="prereq"&&S.db){var o={};o[t.dataset.k]=t.checked;S.prereq[t.dataset.k]=t.checked;render();W(S.db.doc("config/prerequis").set(Object.assign({},S.prereq,o)));}
+  else if(act==="task"&&S.db){W(S.db.doc("taches/"+t.dataset.id).update({done:t.checked}));}
+  else if(act==="stage"&&S.db){ui.openP[t.dataset.id]=true;W(pRef(t.dataset.id).update({etape:t.value,updated:new Date().toISOString()}));}
+  else if(act==="field"&&S.db){var o2={};o2[t.dataset.f]=t.value;W(pRef(t.dataset.id).update(o2));}
+  else if(act==="diagsel"){ui.diagP=t.value;render();}
+});
+app.addEventListener("input",function(e){if(e.target.id==="chatIn")ui.draft=e.target.value;if(e.target.id==="nt-text")ui.newTask=e.target.value;});
+app.addEventListener("toggle",function(e){var d=e.target;if(d.dataset&&d.dataset.pid)ui.openP[d.dataset.pid]=d.open;},true);
+app.addEventListener("submit",function(e){
+  e.preventDefault();var f=e.target;
+  if(f.id==="chatForm"){send(document.getElementById("chatIn").value);}
+  else if(f.id==="taskForm"&&S.db){var tx=document.getElementById("nt-text").value.trim();if(!tx)return;ui.newTask="";W(S.db.collection("taches").add({text:tx,prio:parseInt(document.getElementById("nt-prio").value,10),done:false,created:new Date().toISOString()}));}
+  else if(f.id==="pForm"&&S.db){var n=document.getElementById("np-name").value.trim();if(!n)return;W(pRef(slug(n)).set({name:n,zone:document.getElementById("np-zone").value.trim(),profil:document.getElementById("np-prof").value.trim(),segment:document.getElementById("np-seg").value,etape:"Identifié",conflit:{},notes:"",next:"Test de conflit",updated:new Date().toISOString()}));f.reset();}
+});
+app.addEventListener("keydown",function(e){if(e.target.id==="chatIn"&&e.key==="Enter"&&(e.metaKey||e.ctrlKey)){e.preventDefault();send(e.target.value);}});
+
+/* ---------- Démarrage ---------- */
+render();
+var rT=null;function later(){clearTimeout(rT);rT=setTimeout(function(){var ae=document.activeElement;if(ae&&(ae.tagName==="TEXTAREA"||(ae.tagName==="INPUT"&&ae.type==="text"))){later();return;}render();},120);}
+function docs(snap){return snap.docs.map(function(d){var o=Object.assign({},d.data());o.id=d.id;return o;});}
+if(window.claude&&typeof window.claude.use==="function"){
+  window.claude.use("db").then(function(db){
+    if(!db){S.dbState="off";render();return;}
+    S.db=db;var fail=function(){S.dbState="off";render();};
+    db.collection("prospects").onSnapshot(function(s){S.prospects=docs(s);S.dbState="ok";later();},fail);
+    db.collection("taches").onSnapshot(function(s){S.taches=docs(s);S.dbState="ok";later();},fail);
+    db.collection("diags").onSnapshot(function(s){var m={};s.docs.forEach(function(d){m[d.id]=d.data();});S.diags=m;later();},fail);
+    db.doc("config/prerequis").onSnapshot(function(s){var d=s.exists?s.data():{};S.prereq={contrat:!!d.contrat,avocat:!!d.avocat,conflits:!!d.conflits};later();},fail);
+  }).catch(function(){S.dbState="off";render();});
+  window.claude.use("sample").then(function(s){
+    S.sample=s;S.sampleState=s?"ok":"off";
+    if(s&&s.limits)s.limits().then(function(l){S.toolsOk=!!(l&&l.tools);}).catch(function(){});
+    render();
+  }).catch(function(){S.sampleState="off";render();});
+}else{S.dbState="off";S.sampleState="off";render();}
+})();
+</script>

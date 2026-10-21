@@ -55,3 +55,15 @@ documents/           Documents générés, classés par année et par type
   officiels, mais relisez toujours les chiffres.
 - Aucun envoi, paiement ni dépôt n'est fait sans votre accord.
 - Ne stockez pas de données sensibles (RIB complet, mots de passe) dans ce dépôt.
+
+## Application de pilotage
+
+`app/pilotage.html` est publiée comme page privée sur claude.ai : https://claude.ai/artifact/4LfWNXSgCNQ7vpzUeDxVPw
+
+- **Accueil** : prérequis bloquant, tâches, pipeline, 90 prochains jours.
+- **Prospects** : test de conflit en 5 questions, étape, prochaine action, notes.
+- **Diagnostic** : les 25 questions du diagnostic opérationnel, scores par domaine, restitution rédigée par l'agent commercial.
+- **Agents** : les 6 agents, qui voient le profil, les tâches et les prospects, et peuvent ajouter une tâche.
+
+Les données de l'appli (prospects, tâches, diagnostics) sont stockées dans la page sur claude.ai, pas dans ce dépôt.
+Les agents de l'appli reprennent les rôles de `.claude/agents/`, mais ne modifient pas les fichiers du dépôt.
