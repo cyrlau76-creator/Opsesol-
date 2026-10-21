@@ -30,6 +30,15 @@ propose d'avancer sur ce prérequis à la place.
 
 Commandes rapides : `/point-hebdo`, `/devis`, `/facture`, `/relance`, `/echeances`, `/post`.
 
+Pack « founder » (`.claude/skills/founder-*`, licence MIT, source github.com/Jakeschincariol/founder-skill
+au commit fd9385b) : tests de l'idée avant lancement (`/founder-board`, `/founder-competitors`,
+`/founder-consumer`, `/founder-pricing`, `/founder-offer`, `/founder-cfo`, `/founder-marketing`,
+`/founder-brand`, `/founder-ops`, `/founder-launch`, `/founder-plan`). Pour OPSESOL :
+- répondre en français et adapter au contexte français (INPI, TVA, IS, euros) ;
+- ses fichiers vont dans `founder/` ; ne jamais y écrire le nom de l'employeur actuel ;
+- `/founder-consumer` lance 100 sous-agents : proposer d'abord `--quick` (20) ;
+- le test réel proposé par `/founder-launch` (clients pilotes) est soumis au prérequis bloquant.
+
 ## Règles communes
 
 - Langue : français, ton professionnel et direct.
