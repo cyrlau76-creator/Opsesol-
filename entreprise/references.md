@@ -12,7 +12,7 @@ Ils restent sur claude.ai, accessibles uniquement par le dirigeant. Les agents s
 | OPSESOL — Suivi d'activité | https://claude.ai/artifact/FKsi48oywUELn25B7oezdx | Suivi des missions et du CA mensuel |
 | Flyer OPSESOL | https://claude.ai/artifact/Q7kxfnk2uaGA7urzAuZZNi | Support de présentation |
 
-L'offre DGSA a été retirée le 21/10/2026 (certificat expiré) du Business Plan, du Flyer et du Suivi d'activité. La page OPSESOL Formation cite encore « DGSA certifié depuis 2015 » dans le profil : ne pas la reprendre.
+L'offre DGSA a été retirée le 21/10/2026 (certificat expiré) de toutes ces pages. Le nom de l'employeur a été retiré des passages destinés aux prospects du Business Plan (argumentaire, script d'appel) ; il reste dans le parcours du fondateur, document interne.
 
 Règle : ne jamais recopier dans ce dépôt le nom de l'employeur actuel, les candidatures en cours
 ou le détail des échanges avec des prospects déjà contactés.
