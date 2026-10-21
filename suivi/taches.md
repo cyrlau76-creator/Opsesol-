@@ -7,6 +7,7 @@
 - [ ] Passer chaque prospect du pipeline au test de conflit d'intérêts
 
 ## Priorité 2 — création de la SASU (en parallèle)
+- [ ] Envoyer les questions de `documents/2026/comptabilite/questions-expert-comptable.md` à 2 ou 3 cabinets
 - [ ] Faire valider l'objet social (conseil, DGSA, formation, enseignement) et le régime de TVA par un expert-comptable
 - [ ] Obtenir un devis d'assurance RC pro
 - [ ] Lancer `/echeances` pour la checklist de création
