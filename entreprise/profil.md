@@ -6,7 +6,7 @@
 ## Identité
 
 - Dénomination sociale : OPSESOL
-- Nom commercial : OPSESOL (marque testée : TankOps)
+- Nom commercial : OPSESOL
 - Forme : SASU (en cours de création)
 - Capital social : À définir €
 - Adresse du siège : À définir (Le Havre, 76)
