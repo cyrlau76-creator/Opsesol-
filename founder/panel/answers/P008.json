@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "J'ai déjà payé un audit qui a fini dans un tiroir. Mon problème, c'est qu'il me manque un exploitant solide, pas un rapport de plus avec trois actions que je n'aurai personne pour mettre en œuvre.",
+  "objection": "Qui est derrière, et qu'est-ce qu'il connaît vraiment de mon métier ? Deux heures de questions à distance, ça ne remplace pas quelqu'un qui a fait de l'exploitation citerne. Et la garantie « vous ne payez pas » ne me rend pas le temps que j'y passe.",
+  "would_change_my_mind": "Qu'un transporteur citerne que je connais me dise que ça lui a vraiment servi, ou que l'offre inclue un vrai coup de main pour former mon exploitant junior sur les actions, pas seulement un rapport.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1000,
+  "price_too_expensive": 1500
+}

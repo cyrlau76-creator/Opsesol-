@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Le prix passe, et le remboursement si c'est nul me rassure un peu, mais je ne connais pas ce consultant. Trois heures de mon temps pour un questionnaire de 25 questions, ça sent le rapport générique que je vais ranger dans un tiroir. Avec mes chauffeurs et mes urgences, ça passe après tout le reste.",
+  "objection": "Qui est ce type, est-ce qu'il a vraiment fait de l'exploitation citerne, et est-ce que mon exploitant aura le temps d'appliquer les 3 actions ? Sinon c'est 1 200 € et 3 heures pour rien.",
+  "would_change_my_mind": "Qu'un confrère transporteur citerne que je connais me dise qu'il l'a fait et que ça lui a réglé un vrai problème, ou que le consultant vienne passer une demi-journée avec mon exploitant au lieu d'un questionnaire à distance.",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

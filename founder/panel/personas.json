@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Noah",
+  "age": 51,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 60000,
+  "behaviour": "Cherche à structurer avant une croissance ou une transmission",
+  "behaviour_how": "Prépare un rachat, une transmission ou un nouveau gros contrat et veut une exploitation qui tourne sans lui.",
+  "objection": "Mes clients chimistes m'évaluent déjà (SQAS), ça fait doublon",
+  "habit": "tu lis les infos de la FNTR ou de TLF par e-mail quand tu as cinq minutes"
+ },
+ {
+  "id": "P002",
+  "name": "Luis",
+  "age": 59,
+  "segment": "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain",
+  "income": 94000,
+  "behaviour": "Sous pression d'un chargeur",
+  "behaviour_how": "Vient de recevoir des remarques d'un client chimiste (SQAS, audit qualité) et cherche une réponse rapide.",
+  "objection": "J'ai déjà un conseiller à la sécurité (DGSA), c'est la même chose",
+  "habit": "tu lis les infos de la FNTR ou de TLF par e-mail quand tu as cinq minutes"
+ },
+ {
+  "id": "P003",
+  "name": "Noor",
+  "age": 50,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 79000,
+  "behaviour": "Achète par le réseau",
+  "behaviour_how": "N'achète qu'à quelqu'un qu'un pair, la fédération (TLF, FNTR) ou un client chargeur lui a recommandé.",
+  "objection": "Aucune référence sous ce nom : qui me dit que c'est sérieux ?",
+  "habit": "tu as perdu un bon exploitant l'an dernier et tu n'as pas trouvé de remplaçant"
+ },
+ {
+  "id": "P004",
+  "name": "Lena",
+  "age": 57,
+  "segment": "Directeur d'exploitation ou de site d'une ETI ou filiale de groupe (80 à 150 salariés), budget validé par la direction",
+  "income": 88000,
+  "behaviour": "Cherche à structurer avant une croissance ou une transmission",
+  "behaviour_how": "Prépare un rachat, une transmission ou un nouveau gros contrat et veut une exploitation qui tourne sans lui.",
+  "objection": "J'ai déjà un conseiller à la sécurité (DGSA), c'est la même chose",
+  "habit": "tu passes ta journée au téléphone entre clients, chauffeurs et stations de lavage citerne"
+ },
+ {
+  "id": "P005",
+  "name": "Ivy",
+  "age": 62,
+  "segment": "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain",
+  "income": 101000,
+  "behaviour": "Compte chaque euro",
+  "behaviour_how": "Marges de transport faibles ; toute dépense hors carburant et salaires doit se justifier en économies chiffrées.",
+  "objection": "Aucune référence sous ce nom : qui me dit que c'est sérieux ?",
+  "habit": "ton plus gros client chargeur t'a envoyé un plan d'actions après sa dernière évaluation"
+ },
+ {
+  "id": "P006",
+  "name": "Yusuf",
+  "age": 61,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 61000,
+  "behaviour": "Achète par le réseau",
+  "behaviour_how": "N'achète qu'à quelqu'un qu'un pair, la fédération (TLF, FNTR) ou un client chargeur lui a recommandé.",
+  "objection": "Encore un consultant qui va me faire un rapport générique",
+  "habit": "tu commences à 6 h pour caler les départs des chauffeurs"
+ },
+ {
+  "id": "P007",
+  "name": "Rosa",
+  "age": 49,
+  "segment": "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain",
+  "income": 98000,
+  "behaviour": "Débordé, sans temps",
+  "behaviour_how": "Gère les urgences et les chauffeurs toute la journée ; repousse tout ce qui n'est pas urgent.",
+  "objection": "Encore un consultant qui va me faire un rapport générique",
+  "habit": "tu es sur LinkedIn mais tu ne réponds presque jamais aux messages de prospection"
+ },
+ {
+  "id": "P008",
+  "name": "Ravi",
+  "age": 45,
+  "segment": "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain",
+  "income": 91000,
+  "behaviour": "Méfiant envers les consultants",
+  "behaviour_how": "A déjà payé un audit qui n'a rien changé ; préfère régler les problèmes en interne.",
+  "objection": "1 200 € pour 2 h d'entretien et un rapport, c'est cher",
+  "habit": "tu as perdu un bon exploitant l'an dernier et tu n'as pas trouvé de remplaçant"
+ },
+ {
+  "id": "P009",
+  "name": "Seth",
+  "age": 38,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 70000,
+  "behaviour": "Achète par le réseau",
+  "behaviour_how": "N'achète qu'à quelqu'un qu'un pair, la fédération (TLF, FNTR) ou un client chargeur lui a recommandé.",
+  "objection": "Il connaît le transport, mais connaît-il vraiment la citerne ?",
+  "habit": "tu lis les infos de la FNTR ou de TLF par e-mail quand tu as cinq minutes"
+ },
+ {
+  "id": "P010",
+  "name": "Sienna",
+  "age": 53,
+  "segment": "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain",
+  "income": 88000,
+  "behaviour": "Compte chaque euro",
+  "behaviour_how": "Marges de transport faibles ; toute dépense hors carburant et salaires doit se justifier en économies chiffrées.",
+  "objection": "Encore un consultant qui va me faire un rapport générique",
+  "habit": "tu commences à 6 h pour caler les départs des chauffeurs"
+ },
+ {
+  "id": "P011",
+  "name": "Beatriz",
+  "age": 62,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 68000,
+  "behaviour": "Achète par le réseau",
+  "behaviour_how": "N'achète qu'à quelqu'un qu'un pair, la fédération (TLF, FNTR) ou un client chargeur lui a recommandé.",
+  "objection": "J'ai déjà un conseiller à la sécurité (DGSA), c'est la même chose",
+  "habit": "tu es sur LinkedIn mais tu ne réponds presque jamais aux messages de prospection"
+ },
+ {
+  "id": "P012",
+  "name": "Sofia",
+  "age": 45,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 59000,
+  "behaviour": "Méfiant envers les consultants",
+  "behaviour_how": "A déjà payé un audit qui n'a rien changé ; préfère régler les problèmes en interne.",
+  "objection": "Mes clients chimistes m'évaluent déjà (SQAS), ça fait doublon",
+  "habit": "tu es sur LinkedIn mais tu ne réponds presque jamais aux messages de prospection"
+ },
+ {
+  "id": "P013",
+  "name": "Kai",
+  "age": 37,
+  "segment": "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain",
+  "income": 98000,
+  "behaviour": "Compte chaque euro",
+  "behaviour_how": "Marges de transport faibles ; toute dépense hors carburant et salaires doit se justifier en économies chiffrées.",
+  "objection": "Il a un autre travail : sera-t-il joignable si j'ai besoin de lui ?",
+  "habit": "tu as perdu un bon exploitant l'an dernier et tu n'as pas trouvé de remplaçant"
+ },
+ {
+  "id": "P014",
+  "name": "June",
+  "age": 62,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 74000,
+  "behaviour": "Méfiant envers les consultants",
+  "behaviour_how": "A déjà payé un audit qui n'a rien changé ; préfère régler les problèmes en interne.",
+  "objection": "Il a un autre travail : sera-t-il joignable si j'ai besoin de lui ?",
+  "habit": "tu es sur LinkedIn mais tu ne réponds presque jamais aux messages de prospection"
+ },
+ {
+  "id": "P015",
+  "name": "Mira",
+  "age": 54,
+  "segment": "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain",
+  "income": 107000,
+  "behaviour": "Sous pression d'un chargeur",
+  "behaviour_how": "Vient de recevoir des remarques d'un client chimiste (SQAS, audit qualité) et cherche une réponse rapide.",
+  "objection": "Aucune référence sous ce nom : qui me dit que c'est sérieux ?",
+  "habit": "ton plus gros client chargeur t'a envoyé un plan d'actions après sa dernière évaluation"
+ },
+ {
+  "id": "P016",
+  "name": "Kenji",
+  "age": 36,
+  "segment": "Directeur d'exploitation ou de site d'une ETI ou filiale de groupe (80 à 150 salariés), budget validé par la direction",
+  "income": 71000,
+  "behaviour": "Méfiant envers les consultants",
+  "behaviour_how": "A déjà payé un audit qui n'a rien changé ; préfère régler les problèmes en interne.",
+  "objection": "Il a un autre travail : sera-t-il joignable si j'ai besoin de lui ?",
+  "habit": "tu lis les infos de la FNTR ou de TLF par e-mail quand tu as cinq minutes"
+ },
+ {
+  "id": "P017",
+  "name": "Pablo",
+  "age": 61,
+  "segment": "Directeur d'exploitation ou de site d'une ETI ou filiale de groupe (80 à 150 salariés), budget validé par la direction",
+  "income": 56000,
+  "behaviour": "Débordé, sans temps",
+  "behaviour_how": "Gère les urgences et les chauffeurs toute la journée ; repousse tout ce qui n'est pas urgent.",
+  "objection": "Mes clients chimistes m'évaluent déjà (SQAS), ça fait doublon",
+  "habit": "tu commences à 6 h pour caler les départs des chauffeurs"
+ },
+ {
+  "id": "P018",
+  "name": "Poppy",
+  "age": 50,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 74000,
+  "behaviour": "Sous pression d'un chargeur",
+  "behaviour_how": "Vient de recevoir des remarques d'un client chimiste (SQAS, audit qualité) et cherche une réponse rapide.",
+  "objection": "Il connaît le transport, mais connaît-il vraiment la citerne ?",
+  "habit": "tu commences à 6 h pour caler les départs des chauffeurs"
+ },
+ {
+  "id": "P019",
+  "name": "Tariq",
+  "age": 53,
+  "segment": "Directeur d'exploitation ou de site d'une ETI ou filiale de groupe (80 à 150 salariés), budget validé par la direction",
+  "income": 84000,
+  "behaviour": "Débordé, sans temps",
+  "behaviour_how": "Gère les urgences et les chauffeurs toute la journée ; repousse tout ce qui n'est pas urgent.",
+  "objection": "Il connaît le transport, mais connaît-il vraiment la citerne ?",
+  "habit": "tu as perdu un bon exploitant l'an dernier et tu n'as pas trouvé de remplaçant"
+ },
+ {
+  "id": "P020",
+  "name": "Nia",
+  "age": 60,
+  "segment": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+  "income": 69000,
+  "behaviour": "Cherche à structurer avant une croissance ou une transmission",
+  "behaviour_how": "Prépare un rachat, une transmission ou un nouveau gros contrat et veut une exploitation qui tourne sans lui.",
+  "objection": "Mes clients chimistes m'évaluent déjà (SQAS), ça fait doublon",
+  "habit": "tu es sur LinkedIn mais tu ne réponds presque jamais aux messages de prospection"
+ }
+]

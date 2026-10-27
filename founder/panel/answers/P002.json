@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon problème là, c'est les remarques SQAS de mon client chimiste, et je vais d'abord appeler mon conseiller sécurité, je le paie déjà pour ça. Votre check-up parle de temps et d'argent perdus, pas de mon audit qualité, je ne vois pas le lien.",
+  "objection": "J'ai déjà un DGSA, je ne vois pas ce que vous faites de plus que lui, et je n'ai pas envie de payer deux fois pour qu'on me dise la même chose.",
+  "would_change_my_mind": "Que l'offre dise noir sur blanc qu'elle prépare la réponse aux écarts SQAS / audit chargeur, avec un exemple de transporteur qui a fermé ses remarques grâce à ça, et ce que ça couvre que le DGSA ne couvre pas.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

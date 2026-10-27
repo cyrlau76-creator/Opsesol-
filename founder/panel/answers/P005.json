@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "J'ai le plan d'actions de mon chargeur sur le bureau, donc le besoin est là, mais je ne confie pas mon exploitation à un nom que personne ne connaît dans le métier. La garantie, c'est bien, mais le vrai coût c'est mon temps et celui de mon exploitant.",
+  "objection": "Aucune référence, aucun transporteur que je connais qui l'a fait : qui est derrière, il a vraiment tenu une exploitation citerne ? Et est-ce que mon chargeur reconnaîtra ce rapport ?",
+  "would_change_my_mind": "Un appel avec la personne qui fait l'audit, avec son parcours en exploitation citerne, et un transporteur que je connais qui me dit que ça lui a servi face à son chargeur.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1200,
+  "price_too_expensive": 2000
+}

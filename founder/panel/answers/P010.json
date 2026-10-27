@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "1 200 € sans chiffre d'économie à la clé, c'est une dépense que je n'arrive pas à justifier face au gasoil et aux salaires. Et je ne connais pas ce consultant : 2 h de questions à distance, j'ai peur d'un rapport que j'aurais pu écrire moi-même.",
+  "objection": "Un questionnaire de 25 questions à distance, sans voir mes camions ni mon planning, ça sent le rapport générique. La garantie, c'est bien, mais c'est moi qui perds 3 h et mon exploitant aussi.",
+  "would_change_my_mind": "Un transporteur citerne que je connais qui me dit qu'il a récupéré des euros concrets avec, ou un exemple chiffré d'économie trouvée chez un confrère de ma taille.",
+  "price_too_cheap": 300,
+  "price_cheap": 500,
+  "price_expensive": 900,
+  "price_too_expensive": 1500
+}

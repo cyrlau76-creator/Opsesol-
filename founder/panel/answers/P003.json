@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Le besoin, je l'ai : depuis le départ de mon exploitant, c'est moi qui tiens tout et je sais qu'il y a des trous. Mais je n'ouvre pas mon exploitation à quelqu'un que personne dans mon réseau ne connaît, même avec un « satisfait ou pas payé ».",
+  "objection": "Aucune référence sous ce nom : qui est derrière, qu'est-ce qu'il a réellement fait en citerne, et qui me dit qu'il ne va pas me ressortir un rapport générique en 25 questions ?",
+  "would_change_my_mind": "Qu'un confrère transporteur, la FNTR/TLF ou un de mes chargeurs me dise qu'il l'a fait faire et que ça lui a servi.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1800,
+  "price_too_expensive": 3000
+}

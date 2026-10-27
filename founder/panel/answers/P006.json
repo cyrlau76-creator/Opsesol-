@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je ne connais pas ce consultant et personne de mon réseau, ni la FNTR, ni un chargeur, ne me l'a recommandé. L'exploitation, je la fais moi-même depuis trente ans, ce n'est pas un questionnaire de 25 questions à distance qui va m'apprendre mon métier.",
+  "objection": "Encore un rapport générique fait par quelqu'un qui n'a jamais calé un départ de chauffeur à 6 h du matin ; 25 questions en visio, il ne voit ni mes camions ni mes plannings.",
+  "would_change_my_mind": "Qu'un confrère transporteur citerne que je respecte, ou mon chargeur principal, me dise qu'il l'a fait et que ça lui a vraiment servi.",
+  "price_too_cheap": 300,
+  "price_cheap": 600,
+  "price_expensive": 1000,
+  "price_too_expensive": 1800
+}

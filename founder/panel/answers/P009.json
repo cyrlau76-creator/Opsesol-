@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je ne connais pas ce consultant et personne de mon réseau, ni la FNTR, ni un chargeur, ne me l'a recommandé. Je fais l'exploitation moi-même depuis des années, je ne vais pas ouvrir mes process à un inconnu sur une annonce.",
+  "objection": "Il connaît le transport, mais connaît-il vraiment la citerne : lavages, compatibilités produits, exigences des chargeurs chimie ? 2 h à distance avec 25 questions, ça ressemble à un questionnaire générique.",
+  "would_change_my_mind": "Qu'un confrère transporteur citerne ou un de mes chargeurs me dise qu'il l'a fait et que ça lui a servi.",
+  "price_too_cheap": 400,
+  "price_cheap": 800,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}

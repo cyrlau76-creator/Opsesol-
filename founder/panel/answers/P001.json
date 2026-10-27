@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mes clients chimistes m'auditent déjà au SQAS et je sais à peu près où ça coince. Payer un inconnu pour un questionnaire de 25 questions à distance, ça ressemble à un audit de plus, pas à ce qui rendra l'exploitation indépendante de moi avant la transmission.",
+  "objection": "Ça fait doublon avec le SQAS et deux heures à distance ne verront pas comment ça tourne vraiment quand je ne suis pas là. Et qui est derrière, quelle expérience en citerne ?",
+  "would_change_my_mind": "Qu'on me montre clairement ce que le check-up voit et que le SQAS ne voit pas, en particulier ce qui dépend de moi personnellement dans l'exploitation, présenté comme une préparation à la transmission, avec un confrère transporteur qui l'a fait et en parle.",
+  "price_too_cheap": 300,
+  "price_cheap": 700,
+  "price_expensive": 1500,
+  "price_too_expensive": 2500
+}
