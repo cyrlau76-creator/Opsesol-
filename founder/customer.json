@@ -1,0 +1,37 @@
+{
+  "business": "OPSESOL : Check-up Exploitation Citerne, diagnostic d'exploitation à prix fixe pour transporteurs citerne et vrac liquide",
+  "target": "Dirigeant ou directeur d'exploitation d'un transporteur citerne / vrac liquide (chimie, pétrochimie, alimentaire liquide) de 10 à 150 salariés en France, sans responsable d'exploitation senior à temps plein",
+  "where": "France, surtout Normandie et axe Seine (Le Havre – Rouen) ; achat en B2B, revenu annuel exprimé en euros",
+  "age": [35, 62],
+  "segments": [
+    {"name": "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation", "share": 0.45, "income": [45000, 80000]},
+    {"name": "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain", "share": 0.35, "income": [65000, 110000]},
+    {"name": "Directeur d'exploitation ou de site d'une ETI ou filiale de groupe (80 à 150 salariés), budget validé par la direction", "share": 0.20, "income": [55000, 90000]}
+  ],
+  "behaviours": [
+    {"name": "Méfiant envers les consultants", "share": 0.22, "how": "A déjà payé un audit qui n'a rien changé ; préfère régler les problèmes en interne."},
+    {"name": "Achète par le réseau", "share": 0.20, "how": "N'achète qu'à quelqu'un qu'un pair, la fédération (TLF, FNTR) ou un client chargeur lui a recommandé."},
+    {"name": "Sous pression d'un chargeur", "share": 0.15, "how": "Vient de recevoir des remarques d'un client chimiste (SQAS, audit qualité) et cherche une réponse rapide."},
+    {"name": "Compte chaque euro", "share": 0.15, "how": "Marges de transport faibles ; toute dépense hors carburant et salaires doit se justifier en économies chiffrées."},
+    {"name": "Débordé, sans temps", "share": 0.15, "how": "Gère les urgences et les chauffeurs toute la journée ; repousse tout ce qui n'est pas urgent."},
+    {"name": "Cherche à structurer avant une croissance ou une transmission", "share": 0.13, "how": "Prépare un rachat, une transmission ou un nouveau gros contrat et veut une exploitation qui tourne sans lui."}
+  ],
+  "objections": [
+    "Encore un consultant qui va me faire un rapport générique",
+    "Il connaît le transport, mais connaît-il vraiment la citerne ?",
+    "Aucune référence sous ce nom : qui me dit que c'est sérieux ?",
+    "J'ai déjà un conseiller à la sécurité (DGSA), c'est la même chose",
+    "Mes clients chimistes m'évaluent déjà (SQAS), ça fait doublon",
+    "1 200 € pour 2 h d'entretien et un rapport, c'est cher",
+    "Il a un autre travail : sera-t-il joignable si j'ai besoin de lui ?",
+    "Je n'ai pas envie de montrer mes chiffres et mes problèmes à un extérieur"
+  ],
+  "habits": [
+    "tu commences à 6 h pour caler les départs des chauffeurs",
+    "tu passes ta journée au téléphone entre clients, chauffeurs et stations de lavage citerne",
+    "tu lis les infos de la FNTR ou de TLF par e-mail quand tu as cinq minutes",
+    "ton plus gros client chargeur t'a envoyé un plan d'actions après sa dernière évaluation",
+    "tu as perdu un bon exploitant l'an dernier et tu n'as pas trouvé de remplaçant",
+    "tu es sur LinkedIn mais tu ne réponds presque jamais aux messages de prospection"
+  ]
+}
