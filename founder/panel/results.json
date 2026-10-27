@@ -1,0 +1,158 @@
+{
+ "business": "OPSESOL : Check-up Exploitation Citerne, diagnostic d'exploitation à prix fixe pour transporteurs citerne et vrac liquide",
+ "seed": 615582,
+ "dealt": 20,
+ "answered": 10,
+ "skipped": [
+  [
+   "P011",
+   "missing"
+  ],
+  [
+   "P012",
+   "missing"
+  ],
+  [
+   "P013",
+   "missing"
+  ],
+  [
+   "P014",
+   "missing"
+  ],
+  [
+   "P015",
+   "missing"
+  ],
+  [
+   "P016",
+   "missing"
+  ],
+  [
+   "P017",
+   "missing"
+  ],
+  [
+   "P018",
+   "missing"
+  ],
+  [
+   "P019",
+   "missing"
+  ],
+  [
+   "P020",
+   "missing"
+  ]
+ ],
+ "buys": 0,
+ "passes": 10,
+ "buy_rate": 0.0,
+ "by_segment": [
+  [
+   "Dirigeant-fondateur d'une PME familiale de 10 à 30 salariés, qui fait lui-même l'exploitation",
+   4,
+   0.0
+  ],
+  [
+   "Dirigeant d'une PME de 30 à 80 salariés avec un exploitant junior ou promu du terrain",
+   5,
+   0.0
+  ],
+  [
+   "Directeur d'exploitation ou de site d'une ETI ou filiale de groupe (80 à 150 salariés), budget validé par la direction",
+   1,
+   0.0
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Cherche à structurer avant une croissance ou une transmission",
+   2,
+   0.0
+  ],
+  [
+   "Sous pression d'un chargeur",
+   1,
+   0.0
+  ],
+  [
+   "Achète par le réseau",
+   3,
+   0.0
+  ],
+  [
+   "Compte chaque euro",
+   2,
+   0.0
+  ],
+  [
+   "Débordé, sans temps",
+   1,
+   0.0
+  ],
+  [
+   "Méfiant envers les consultants",
+   1,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "under $79,000",
+   3,
+   0.0
+  ],
+  [
+   "$91,000 and up",
+   4,
+   0.0
+  ],
+  [
+   "$79,000 to $91,000",
+   3,
+   0.0
+  ]
+ ],
+ "why_not": [
+  [
+   "trust",
+   7,
+   [
+    "Le besoin, je l'ai : depuis le départ de mon exploitant, c'est moi qui tiens tout et je sais qu'il y a des trous. Mais je n'ouvre pas mon exploitation à quelqu'un que personne dans mon réseau ne connaît, même avec un « satisfait ou pas payé ».",
+    "J'ai le plan d'actions de mon chargeur sur le bureau, donc le besoin est là, mais je ne confie pas mon exploitation à un nom que personne ne connaît dans le métier. La garantie, c'est bien, mais le vrai coût c'est mon temps et celui de mon exploitant."
+   ],
+   [
+    "P003",
+    "P005"
+   ]
+  ],
+  [
+   "need",
+   3,
+   [
+    "Mes clients chimistes m'auditent déjà au SQAS et je sais à peu près où ça coince. Payer un inconnu pour un questionnaire de 25 questions à distance, ça ressemble à un audit de plus, pas à ce qui rendra l'exploitation indépendante de moi avant la transmission.",
+    "Mon problème là, c'est les remarques SQAS de mon client chimiste, et je vais d'abord appeler mon conseiller sécurité, je le paie déjà pour ça. Votre check-up parle de temps et d'argent perdus, pas de mon audit qualité, je ne vois pas le lien."
+   ],
+   [
+    "P001",
+    "P002"
+   ]
+  ]
+ ],
+ "why_yes": [],
+ "flip": [
+  "Qu'on me montre clairement ce que le check-up voit et que le SQAS ne voit pas, en particulier ce qui dépend de moi personnellement dans l'exploitation, présenté comme une préparation à la transmission, avec un confrère transporteur qui l'a fait et en parle.",
+  "Que l'offre dise noir sur blanc qu'elle prépare la réponse aux écarts SQAS / audit chargeur, avec un exemple de transporteur qui a fermé ses remarques grâce à ça, et ce que ça couvre que le DGSA ne couvre pas.",
+  "Qu'un confrère transporteur, la FNTR/TLF ou un de mes chargeurs me dise qu'il l'a fait faire et que ça lui a servi.",
+  "Un exemple de rapport qui montre clairement que ça ne touche pas à la conformité ADR mais à l'organisation, à la productivité et à la dépendance au chef, avec la journée sur site incluse et un livrable que je peux présenter à un repreneur.",
+  "Un appel avec la personne qui fait l'audit, avec son parcours en exploitation citerne, et un transporteur que je connais qui me dit que ça lui a servi face à son chargeur.",
+  "Qu'un confrère transporteur citerne que je respecte, ou mon chargeur principal, me dise qu'il l'a fait et que ça lui a vraiment servi.",
+  "Qu'un confrère transporteur citerne que je connais me dise qu'il l'a fait et que ça lui a réglé un vrai problème, ou que le consultant vienne passer une demi-journée avec mon exploitant au lieu d'un questionnaire à distance.",
+  "Qu'un transporteur citerne que je connais me dise que ça lui a vraiment servi, ou que l'offre inclue un vrai coup de main pour former mon exploitant junior sur les actions, pas seulement un rapport.",
+  "Qu'un confrère transporteur citerne ou un de mes chargeurs me dise qu'il l'a fait et que ça lui a servi.",
+  "Un transporteur citerne que je connais qui me dit qu'il a récupéré des euros concrets avec, ou un exemple chiffré d'économie trouvée chez un confrère de ma taille."
+ ],
+ "purchases_first_month_per_buyer": null,
+ "price_answers": 10
+}
