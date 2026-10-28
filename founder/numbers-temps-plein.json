@@ -1,28 +1,36 @@
 {
-  "business": "OPSESOL (SASU) — ANNÉE 2, à temps plein après départ du poste salarié. Euros HT. 1 « jour » de l'outil = 1 mois.",
+  "business": "OPSESOL (micro-entreprise) — ANNÉE À TEMPS PLEIN après le départ. Euros HT. 1 « jour » de l'outil = 1 mois.",
   "unit": "jour facturé",
   "price": 600,
   "variable": [
     {
-      "label": "Déplacement par jour d'intervention (ESTIMATION : ~60 km aller-retour, barème kilométrique ~0,60 €/km)",
+      "label": "Déplacement par jour d'intervention (ESTIMATION : ~60 km aller-retour, ~0,60 €/km)",
       "cost": 36
     },
     {
-      "label": "Petits frais par mission (impression, repas) (ESTIMATION)",
+      "label": "Petits frais par mission (ESTIMATION)",
       "cost": 10
+    },
+    {
+      "label": "Cotisations sociales micro-entreprise 25,6 % + formation professionnelle 0,2 % du CA (urssaf.fr 2026 ; 0,2 % à vérifier)",
+      "cost": 154.8
+    },
+    {
+      "label": "Impôt sur le revenu en versement libératoire 2,2 % du CA (si éligible, à vérifier)",
+      "cost": 13.2
     }
   ],
   "fixed_monthly": [
     {
-      "label": "Expert-comptable SASU (ESTIMATION, devis à obtenir)",
-      "cost": 120
+      "label": "Consultation ponctuelle d'un expert-comptable (ESTIMATION ~300 €/an)",
+      "cost": 25
     },
     {
       "label": "Assurance RC pro (ESTIMATION ~300 €/an, devis à obtenir)",
       "cost": 25
     },
     {
-      "label": "Banque pro (ESTIMATION)",
+      "label": "Compte bancaire dédié (ESTIMATION)",
       "cost": 15
     },
     {
@@ -30,15 +38,15 @@
       "cost": 15
     },
     {
-      "label": "Logiciels, téléphone, nom de domaine (ESTIMATION, business plan : 150-250 €/an + téléphone)",
+      "label": "Logiciels, téléphone, nom de domaine (ESTIMATION)",
       "cost": 20
     },
     {
-      "label": "Prévoyance + mutuelle du président, plus couvert par l'employeur (ESTIMATION)",
+      "label": "Mutuelle et prévoyance complémentaire (ESTIMATION)",
       "cost": 150
     },
     {
-      "label": "Prospection : salons, déplacements commerciaux, LinkedIn (ESTIMATION)",
+      "label": "Prospection : salons, déplacements, LinkedIn (ESTIMATION)",
       "cost": 150
     }
   ],

@@ -5,21 +5,19 @@
 
 ## Identité
 
-- Dénomination sociale : OPSESOL
-- Nom commercial : OPSESOL
-- Forme : SASU (en cours de création)
-- Capital social : À définir €
-- Adresse du siège : À définir (Le Havre, 76)
-- SIREN : À définir (après immatriculation)
-- RCS : Le Havre (à confirmer)
-- N° TVA intracommunautaire : À définir
+- Forme : **micro-entreprise** (entreprise individuelle, choix du 28/10/2026 ; comparatif : `founder/statut-micro-vs-sasu.md`)
+- Dénomination sur les documents : **Cyril Laurent EI**, nom commercial **OPSESOL**
+- Adresse de l'entreprise : À définir (Le Havre, 76)
+- SIREN : À définir (après la déclaration sur le guichet unique)
+- Immatriculation : Registre national des entreprises (RNE), pas de RCS pour une activité libérale (à confirmer)
+- N° TVA intracommunautaire : À définir (utile dès qu'on facture la TVA ou un client UE)
 - Code APE / NAF : À définir (conseil pour les affaires et autres conseils de gestion, à confirmer)
-- Date de clôture de l'exercice : 31/12 (à confirmer)
-- Premier exercice : À définir
+- Exercice : année civile
+- Début d'activité : visé janvier 2027
 
 ## Dirigeant
 
-- Président : Cyril Laurent
+- Entrepreneur : Cyril Laurent
 - E-mail pro : À définir
 - Téléphone : À définir
 - Temps disponible pour l'activité : 4 h / semaine en année 1, environ 7 h / semaine en année 2
@@ -59,10 +57,10 @@ organisation, management, pilotage) avec plan d'actions et 5 indicateurs.
 
 ## Objectifs
 
-- Objectif de revenu : 3 500 € net / mois à terme (≈ 4 500 € de CA mensuel, 7 à 9 jours facturés).
+- Objectif de revenu : 3 500 € net / mois à terme (≈ 6 060 € de CA mensuel, ~10 jours facturés, en micro-entreprise).
 - Année 1 = phase de test : 5 à 10 jours d'intervention, premières références.
 - **Quitter le poste salarié d'ici octobre 2027**, si les critères de départ sont réunis (voir `founder/transition.md`).
-- Objectif de CA à temps plein : ~5 900 €/mois, soit ~11 jours facturés par mois.
+- Objectif de CA à temps plein : ~6 060 €/mois (~72 700 €/an), sous le plafond micro de 83 600 €.
 
 ## Prérequis bloquant avant toute prospection
 
@@ -71,16 +69,18 @@ Aucun contact prospect, devis ou facture tant que :
 - [ ] l'avis d'un avocat en droit du travail est obtenu si nécessaire ;
 - [ ] chaque prospect a passé le test de conflit d'intérêts (voir la grille dans `references.md`).
 
-## Régimes (à valider avec l'expert-comptable)
+## Régimes (à faire confirmer par l'Urssaf ou un expert-comptable)
 
-- Régime de TVA : À définir. Point d'attention : l'exonération de TVA de la formation professionnelle
-  suppose une déclaration d'activité de formation et une attestation de la DREETS.
-- Imposition : IS (par défaut en SASU)
-- Rémunération du président : aucune au démarrage (à confirmer)
-- Objet social : inclure conseil, formation professionnelle et enseignement.
+- Régime : micro-entreprise, catégorie **BNC** (prestations de services libérales non réglementées).
+- Plafond de CA : 83 600 €/an en 2026 (au-delà : passage en société).
+- Cotisations sociales : 25,6 % du CA encaissé en 2026, + formation professionnelle ~0,2 % (à vérifier). Déclaration mensuelle ou trimestrielle sur autoentrepreneur.urssaf.fr (à choisir).
+- Impôt : versement libératoire de ~2,2 % du CA si le revenu fiscal le permet (à vérifier), sinon barème sur le CA après abattement de 34 %.
+- TVA : franchise en base (« TVA non applicable, art. 293 B du CGI ») tant que le CA reste sous 37 500 € l'année précédente et 41 250 € l'année en cours ; ensuite, TVA à facturer. Point d'attention : l'exonération de TVA de la formation professionnelle suppose une déclaration d'activité de formation et une attestation de la DREETS.
+- ACRE : probablement pas accessible en étant salarié (conditions 2026 à vérifier).
+- Revenu : ce qui est encaissé, moins cotisations et frais, est disponible chaque mois.
+- Expert-comptable : non obligatoire ; consultation ponctuelle à prévoir.
 - Assurance RC pro : devis à obtenir
-- Expert-comptable : À définir
-- Banque pro : À définir
+- Compte bancaire dédié : recommandé (obligatoire si le CA dépasse 10 000 € deux années de suite, à vérifier)
 - Plateforme de facturation électronique : À définir
 
 ## Conditions commerciales par défaut

@@ -5,10 +5,10 @@
 
 | Émetteur | Client |
 |---|---|
-| [Dénomination] SASU au capital de [X] € | [Raison sociale / Nom] |
+| Cyril Laurent EI — OPSESOL | [Raison sociale / Nom] |
 | [Adresse du siège] | [Adresse de facturation] |
-| SIREN [XXX XXX XXX] — RCS [Ville] | SIREN : [si professionnel] |
-| TVA : [FRXX XXXXXXXXX] | TVA : [si UE] |
+| SIREN [XXX XXX XXX] | SIREN : [si professionnel] |
+| TVA : [FRXX XXXXXXXXX, si attribué] | TVA : [si UE] |
 
 | Désignation | Qté | Unité | PU HT | Total HT |
 |---|---|---|---|---|

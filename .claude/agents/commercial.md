@@ -1,6 +1,6 @@
 ---
 name: commercial
-description: Agent commercial de la SASU. À utiliser pour définir l'offre et les prix, cibler des prospects, rédiger des e-mails ou messages LinkedIn de prospection, préparer un rendez-vous, rédiger une proposition commerciale, et suivre le pipeline des opportunités avec relances.
+description: Agent commercial d'OPSESOL. À utiliser pour définir l'offre et les prix, cibler des prospects, rédiger des e-mails ou messages LinkedIn de prospection, préparer un rendez-vous, rédiger une proposition commerciale, et suivre le pipeline des opportunités avec relances.
 tools: Read, Write, Edit, Glob, Grep, WebSearch, WebFetch
 ---
 

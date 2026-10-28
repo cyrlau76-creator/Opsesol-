@@ -1,49 +1,29 @@
-# Questions pour les devis d'expert-comptable — OPSESOL (SASU)
+# Questions pour une consultation d'expert-comptable — OPSESOL (micro-entreprise)
 
-À envoyer à 2 ou 3 cabinets (en ligne ou locaux, Le Havre). Joindre le résumé de l'activité ci-dessous.
+Une consultation ponctuelle d'environ une heure suffit (demander le prix à l'avance). Joindre le résumé ci-dessous.
 
-**Résumé à joindre** : SASU en création, conseil en exploitation transport citerne / vrac liquide,
-audits d'exploitation et formation professionnelle. Président unique, non rémunéré au démarrage,
-activité salariée en parallèle. CA prévisionnel : environ 20 000 € en année 1, 50 000 € en année 2.
-Peu d'opérations : 1 à 5 factures et une vingtaine de dépenses par mois.
+**Résumé à joindre** : création d'une micro-entreprise (BNC) en janvier 2027, conseil en exploitation transport
+citerne / vrac liquide (audits d'exploitation) et formation professionnelle. Entrepreneur salarié à temps plein
+jusqu'à un départ visé vers octobre 2027. CA prévisionnel : environ 4 500 € en 2027 (temps partiel),
+50 000 à 70 000 € la première année à temps plein. Très peu de frais.
 
-## 1. Prix et périmètre
-1. Quel est le forfait annuel HT, et que comprend-il exactement (tenue, bilan, liasse, TVA, approbation des comptes, dépôt au greffe) ?
-2. La création (statuts, formalités, immatriculation) est-elle incluse ou facturée à part ? Combien ?
-3. Quels frais en plus : paie, juridique annuel, questions ponctuelles, rendez-vous ?
-4. Quel outil de saisie ou de banque imposez-vous, et à quel coût ?
-5. Le forfait est-il réduit pour un premier exercice à faible activité ?
+## 1. Le statut
+1. Confirmez-vous que la micro-entreprise est préférable à une SASU dans ma situation ? À partir de quel CA faudra-t-il passer en société ?
+2. Avec mon salaire, ai-je droit au versement libératoire ? Sinon, combien d'impôt prévoir sur le CA micro ?
+3. Ai-je droit à l'ACRE en étant salarié, et après un départ en rupture conventionnelle ?
+4. Mensuel ou trimestriel pour les déclarations Urssaf ?
 
-## 2. Création de la société
-6. Immatriculation en décembre 2026 ou en janvier 2027 : que recommandez-vous, et pour quel premier exercice ?
-7. Quel capital et quelle domiciliation conseillez-vous (domicile, société de domiciliation) ?
-8. Comment rédiger l'objet social pour couvrir conseil, formation professionnelle et enseignement ?
-9. Quelles clauses des statuts recommandez-vous (délai d'approbation des comptes, rémunération du président) ?
+## 2. La TVA
+5. Pendant la franchise, quelle mention exacte mettre sur mes factures ?
+6. Quand je dépasserai 41 250 € en cours d'année, que dois-je faire exactement (numéro de TVA, déclarations, régime) ?
+7. Faut-il demander l'exonération de TVA de la formation (déclaration d'activité, attestation DREETS) ? Est-ce utile tant que je suis en franchise ?
+8. Quelle plateforme agréée de facturation électronique conseillez-vous pour une micro-entreprise ?
 
-## 3. TVA
-10. Avec la suppression du régime simplifié au 01/01/2027, faut-il choisir la franchise en base ou le réel normal ? Comment les seuils se calculent-ils l'année de création ?
-11. Faut-il demander l'exonération de TVA de la formation (déclaration d'activité, attestation DREETS) ? Quel impact sur la récupération de TVA ?
-12. Quelle plateforme agréée de facturation électronique conseillez-vous, et est-elle reliée à votre outil ?
+## 3. Le départ
+9. Je prévois de quitter mon poste vers octobre 2027 : comment cumuler la micro-entreprise avec l'ARE, ou faut-il préférer l'ARCE ?
+10. Quelle protection sociale ai-je en micro-entreprise (maladie, indemnités journalières, retraite), et quelle mutuelle ou prévoyance ajouter ?
 
-## 4. Impôt et rémunération
-0. Je prévois de quitter mon poste salarié vers octobre 2027 pour vivre de la SASU : comment me rémunérer chaque mois (salaire de président, dividendes, autre statut) et à quel coût ?
-13. Président non rémunéré la première année : conséquences (protection sociale, cumul avec mon salaire) ?
-14. Le moment venu, quel arbitrage entre salaire et dividendes pour mon niveau de revenu ?
-15. Quels frais pourrai-je déduire (véhicule, téléphone, bureau à domicile, formation) ?
-
-## 5. Fonctionnement
-16. Qui sera mon interlocuteur, et dans quel délai répondez-vous ?
-17. Comment se passent les échanges : plateforme, e-mail, rendez-vous ? Le tout à distance est-il possible ?
-18. Avez-vous d'autres clients consultants ou organismes de formation ?
-
-## Comparatif des réponses
-
-| Critère | Cabinet 1 | Cabinet 2 | Cabinet 3 |
-|---|---|---|---|
-| Forfait annuel HT | | | |
-| Création incluse / prix | | | |
-| Outil imposé / coût | | | |
-| Recommandation TVA | | | |
-| Date d'immatriculation conseillée | | | |
-| Interlocuteur et délai de réponse | | | |
-| Ressenti | | | |
+## 4. Le fonctionnement
+11. Quels registres tenir (recettes, achats) et sous quelle forme ?
+12. Compte bancaire dédié : obligatoire tout de suite ?
+13. Puis-je revenir vers vous ponctuellement, à quel tarif ?

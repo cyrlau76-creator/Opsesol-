@@ -1,6 +1,6 @@
-# Opsesol — bureau virtuel de ma SASU
+# Opsesol — bureau virtuel de ma micro-entreprise
 
-Une équipe d'agents Claude Code pour gérer une SASU avec très peu de temps.
+Une équipe d'agents Claude Code pour gérer une micro-entreprise avec très peu de temps.
 Les agents **préparent** (documents, calculs, brouillons), vous **validez**.
 
 ## Démarrage (15 minutes, une seule fois)
@@ -21,7 +21,7 @@ Les agents **préparent** (documents, calculs, brouillons), vous **validez**.
 | Chaque trimestre | `/echeances` | Calendrier fiscal et légal à jour |
 
 Vous pouvez aussi parler librement : « prépare la décision d'approbation des comptes »,
-« compare salaire et dividendes pour 30 000 € de bénéfice », « écris un e-mail de
+« combien de cotisations pour 4 000 € encaissés ce trimestre ? », « écris un e-mail de
 prospection pour les PME du BTP »… L'agent adapté est choisi automatiquement.
 
 ## L'équipe
@@ -29,8 +29,8 @@ prospection pour les PME du BTP »… L'agent adapté est choisi automatiquement
 | Agent | Rôle |
 |---|---|
 | `assistant-direction` | Trie, priorise, délègue, fait le point hebdo |
-| `juriste-sasu` | Création, statuts, décisions de l'associé unique, contrats, CGV, RGPD |
-| `comptable-fiscal` | TVA, IS, rémunération / dividendes, frais, trésorerie, calendrier |
+| `juriste` | Création de la micro-entreprise, formalités, contrats, CGV, RGPD, passage en société |
+| `comptable-fiscal` | Cotisations Urssaf, impôt, franchise de TVA, plafonds, trésorerie, calendrier |
 | `facturation` | Devis, factures, avoirs, numérotation, relances |
 | `commercial` | Offre, prospection, propositions, pipeline |
 | `marketing-contenu` | LinkedIn, site web, newsletter |

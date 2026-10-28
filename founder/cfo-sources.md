@@ -1,21 +1,21 @@
-# Sources des chiffres — founder/numbers.json
+# Sources des chiffres — founder/numbers.json (micro-entreprise)
 
 | Chiffre | Valeur | Source |
 |---|---|---|
-| Prix moyen d'un jour facturé | 600 € HT | Grille du fondateur (`entreprise/profil.md`) : audit express 550-1 100 € pour 1-2 jours, plancher 500 €/jour. Marché : 550 €/jour pour un consultant transport sur [Malt](https://www.malt.fr/profile/alielkouki1), 450-900 € selon [travail-industrie.com](https://travail-industrie.com/fiche-tjm/responsable-exploitation-transport) (non officiel) |
-| Déplacement | 36 €/jour | **Estimation** : ~60 km aller-retour (zone Le Havre + 30 km) × ~0,60 €/km. Barème kilométrique de l'année à vérifier sur impots.gouv.fr |
+| Prix moyen d'un jour facturé | 600 € HT | Grille du fondateur (`entreprise/profil.md`) ; marché : 550 €/jour sur [Malt](https://www.malt.fr/profile/alielkouki1), 450-900 € selon [travail-industrie.com](https://travail-industrie.com/fiche-tjm/responsable-exploitation-transport) (non officiel) |
+| Cotisations sociales | 25,6 % du CA (BNC, 2026) | [urssaf.fr](https://www.urssaf.fr/accueil/actualites/taux-cotisations-autoentrepeneur.html), consulté le 28/10/2026 |
+| Formation professionnelle | 0,2 % du CA | **À vérifier** sur autoentrepreneur.urssaf.fr |
+| Versement libératoire de l'impôt | 2,2 % du CA | **À vérifier**, ainsi que le plafond de revenu fiscal qui y donne droit |
+| ACRE | Non retenue (19,2 % au lieu de 25,6 % pour un début après le 01/07/2026, conditions modifiées en 2026) | [urssaf.fr](https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html) ; éligibilité d'un salarié à vérifier |
+| Plafond de CA, services | 83 600 € | [economie.gouv.fr](https://www.economie.gouv.fr/entreprises/gerer-sa-micro-entreprise/micro-entreprise-que-se-passe-t-il-quand-le-seuil-de-chiffre-daffaires-est-depasse) |
+| Franchise de TVA, services | 37 500 € / 41 250 € | [BOFiP](https://bofip.impots.gouv.fr/bofip/849-PGP.html/identifiant=BOI-TVA-DECLA-40-10-10-20260701) |
+| Déplacement | 36 €/jour | **Estimation** : ~60 km aller-retour × ~0,60 €/km |
 | Petits frais | 10 €/jour | **Estimation** |
-| Expert-comptable | 120 €/mois | **Estimation** ; remplacer par le devis retenu (questions : `documents/2026/comptabilite/questions-expert-comptable.md`) |
-| RC pro | 25 €/mois | **Estimation** (~300 €/an) ; business plan : 200-400 € la 1re année |
-| Banque pro | 15 €/mois | **Estimation** |
-| Facturation électronique | 15 €/mois | **Estimation** ; plateforme agréée obligatoire en réception depuis le 01/09/2026 (`suivi/echeances.md`) |
-| Logiciels, téléphone, domaine | 20 €/mois | **Estimation** ; business plan : 150-250 €/an de logiciels |
-| CFE | 0 € en année 1 | Exonération l'année de création (`suivi/echeances.md`) |
-| Statuts / création | 500 € | **Estimation** |
-| Annonce légale | 150 € | **Estimation** (forfait réglementé, à vérifier pour la Seine-Maritime) |
-| Greffe | 40 € | **Estimation** |
-| Site, flyer, cartes | 450 + 250 + 150 € | Business plan du fondateur (fourchettes 300-600, 150-400, 100-200 €), valeur médiane |
-| Capacité | 2 jours/mois | ~16 h/mois disponibles (4 h/semaine), préparation et rendu compris |
-| Rampe année 1 | 0, 0, 0,5, 0,5, 1, 0,5, 0, 1, 1, 1, 1, 1 jours | **Hypothèse** : prospection bloquée tant que le contrat de travail n'est pas vérifié, premières missions vers le mois 3, creux en août. Total 7,5 jours, dans la fourchette 5-10 jours du conseil. Aucun panel d'acheteurs ni vente réelle pour la confirmer |
-| Part du résultat qui revient au président | ~59,5 % | IS 15 % (taux réduit PME, à vérifier) puis prélèvement forfaitaire unique ~30 % sur dividendes (à vérifier, le taux des prélèvements sociaux a pu changer) |
-| Matériel informatique | 0 € | Hypothèse : ordinateur existant (business plan : 800-1 500 € « si à renouveler ») |
+| Expert-comptable | 25 €/mois | **Estimation** : consultation ponctuelle ~300 €/an |
+| RC pro, banque, facturation électronique, logiciels | 25 + 15 + 15 + 20 €/mois | **Estimations** ; plateforme de réception obligatoire depuis le 01/09/2026 |
+| Mutuelle, prévoyance, prospection (temps plein) | 150 + 150 €/mois | **Estimations** (`founder/numbers-temps-plein.json`) |
+| CFE | 0 € l'année de création | Exonération l'année de création (`suivi/echeances.md`) |
+| Immatriculation | 0 € | Guichet unique, gratuit pour une micro-entreprise (**à vérifier** au moment du dépôt) |
+| Site, flyer, cartes | 450 + 250 + 150 € | Business plan du fondateur, valeurs médianes |
+| Capacité | 2 jours/mois | ~16 h/mois disponibles |
+| Rampe année de test | 0, 0, 0,5, 0,5, 1, 0,5, 0, 1, 1, 1, 1, 1 | **Hypothèse** : prospection bloquée tant que le contrat n'est pas vérifié ; 7,5 jours au total |

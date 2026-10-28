@@ -4,10 +4,10 @@
 
 | Émetteur | Client |
 |---|---|
-| [Dénomination] SASU au capital de [X] € | [Raison sociale / Nom] |
+| Cyril Laurent EI — OPSESOL | [Raison sociale / Nom] |
 | [Adresse du siège] | [Adresse] |
-| SIREN [XXX XXX XXX] — RCS [Ville] | SIREN : [si professionnel] |
-| TVA : [FRXX XXXXXXXXX] | |
+| SIREN [XXX XXX XXX] | SIREN : [si professionnel] |
+| TVA : [FRXX XXXXXXXXX, si attribué] | |
 
 **Objet :** [Intitulé de la mission]
 

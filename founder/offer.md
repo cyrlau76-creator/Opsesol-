@@ -81,11 +81,15 @@ Un check-up mobilise environ 1,5 jour de travail (2 h d'entretien, analyse et r�
 
 **La garantie, modélisée** : avec 1 client sur 10 qui la fait jouer (hypothèse prudente pour un premier lancement), le revenu moyen tombe à 1 080 € par check-up, soit **720 €/jour**.
 
-| Scénario (outil CFO, `--price`) | Résultat d'exploitation, année de test | Année à temps plein |
+En micro-entreprise, les cotisations et l'impôt (28 % du CA au total, à vérifier) suivent le prix. Net pour vous par jour de travail : 600 € ⇒ 386 € ; 720 € ⇒ ~472 € ; 800 € ⇒ ~530 €.
+
+| Scénario (micro-entreprise, net pour vous) | Année de test (7,5 jours) | Année à temps plein (85 jours) |
 |---|---:|---:|
-| Plan actuel, 600 €/jour | 1 815 € | 41 150 € |
-| Check-up avec garantie jouée 1 fois sur 10 : 720 €/jour | **2 715 €** | **51 350 €** |
-| Check-up sans garantie jouée : 800 €/jour | 3 315 € | 58 150 € |
+| Plan actuel, 600 €/jour | 1 695 € | 28 010 € |
+| Check-up avec garantie jouée 1 fois sur 10 : 720 €/jour | **~2 340 €** | **~35 350 €** |
+| Check-up sans garantie jouée : 800 €/jour | ~2 775 € | ~40 250 € |
+
+Calcul : jours × (prix × 0,72 − 46 € de frais) − frais fixes annuels (1 200 € en test, 4 800 € à temps plein). Les chiffres à 600 € viennent de l'outil CFO.
 
 Les 3 tarifs pilotes (900 € au lieu de 1 200 €) coûtent 900 € de CA au total : c'est le prix de 3 références écrites. La garantie reste abordable même jouée 3 fois sur 10 (revenu moyen 840 €, soit 560 €/jour, proche du plan actuel).
 

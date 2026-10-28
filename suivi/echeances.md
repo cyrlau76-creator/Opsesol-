@@ -1,167 +1,114 @@
 # Calendrier des obligations
 
-> Généré et maintenu par l'agent `comptable-fiscal` (commande `/echeances`). Mise à jour : 21/10/2026.
-> Situation : SASU OPSESOL en création, IS, président non rémunéré, clôture 31/12 (à confirmer),
-> régime de TVA non choisi, activité conseil + formation.
+> Maintenu par l'agent `comptable-fiscal` (commande `/echeances`). Mise à jour : 28/10/2026.
+> Situation : **micro-entreprise** (entreprise individuelle, BNC) à créer, nom commercial OPSESOL,
+> début d'activité visé en janvier 2027, activité conseil + formation, entrepreneur salarié en parallèle.
 > Le prérequis bloquant (compatibilité avec l'activité salariée) bloque la prospection, pas la création.
-> Sources numérotées [S1]… en bas de fichier. « À vérifier » = non confirmé sur une source officielle.
+> Sources [S…] en bas de fichier. « À vérifier » = non confirmé sur une source officielle.
 
-## 1. Checklist de création (ordre conseillé)
+## 1. Création (ordre conseillé)
 
 | # | Étape | Points d'attention | Source | Statut |
 |---|---|---|---|---|
-| 1 | Choisir l'expert-comptable (2-3 devis) | Lui faire valider les étapes 2 et 9 avant signature des statuts | — | [ ] |
-| 2 | Rédiger les statuts, fixer le capital | Objet social : conseil, formation professionnelle, enseignement. Prévoir la date de clôture et la durée du 1er exercice (voir section 2.6) | [S9] [S10] | [ ] |
-| 3 | Domiciliation du siège (Le Havre) | Domicile du président, société de domiciliation ou local. Domicile : vérifier bail / règlement de copropriété (à vérifier) | — | [ ] |
-| 4 | Ouvrir le compte bancaire pro et déposer le capital | Dépôt des apports en numéraire dans les 8 jours de leur réception, sur compte au nom de la société en formation (banque ou notaire) ; fonds débloqués sur présentation du Kbis | [S9] | [ ] |
-| 5 | Signer les statuts (mention du dépôt des fonds) | Enregistrement au SIE non obligatoire en principe depuis 2015 (sauf cas particuliers) | [S9] | [ ] |
-| 6 | Publier l'annonce légale (support habilité de Seine-Maritime) | Après signature des statuts ; justificatif exigé pour l'immatriculation | [S9] | [ ] |
-| 7 | Déposer le dossier sur le guichet unique | https://formalites.entreprises.gouv.fr | [S10] | [ ] |
-| 8 | Déclarer les bénéficiaires effectifs | Dans le même dossier sur le guichet unique | [S9] | [ ] |
-| 9 | Choisir le régime de TVA et l'option de clôture | Dans le dossier d'immatriculation. Options réalistes : franchise en base ou réel normal (le réel simplifié disparaît au 01/01/2027, voir 2.1) | [S2] [S3] | [ ] |
-| 10 | Réception du Kbis, déblocage du capital, création de l'espace professionnel impots.gouv.fr | — | [S9] | [ ] |
-| 11 | Déclaration initiale de CFE 1447-C-SD | Au plus tard le 31/12 de l'année de création | [S6] [S7] | [ ] |
-| 12 | Souscrire la RC pro | Avant la première mission ; couvrir conseil et formation | — | [ ] |
-| 13 | Choisir une plateforme agréée de facturation électronique | Réception obligatoire depuis le 01/09/2026 pour toute entreprise : à faire dès l'immatriculation | [S4] [S5] | [ ] |
-| 14 | Déclaration d'activité de formation (Mon Activité Formation / DREETS) | Seulement si la formation est facturée via la SASU : dans les 3 mois suivant la signature de la 1re convention de formation (donc après levée du prérequis bloquant) | [S12] (secondaire, à vérifier) | [ ] |
-| 15 | Attestation d'exonération de TVA formation (3511-SD, à la DREETS) | Uniquement si l'exonération est visée et la déclaration d'activité faite ; effet à la réception de la demande ; silence 3 mois = accord | [S11] | [ ] |
+| 1 | Consultation ponctuelle d'un expert-comptable | Valider le régime micro, le versement libératoire et la date de début (questions : `documents/2026/comptabilite/questions-expert-comptable.md`) | — | [ ] |
+| 2 | Choisir l'adresse de l'entreprise | Domicile (vérifier bail ou règlement de copropriété, à vérifier) ou domiciliation | — | [ ] |
+| 3 | Déclarer le début d'activité sur le guichet unique | https://formalites.entreprises.gouv.fr ; activité libérale non réglementée (BNC), nom commercial OPSESOL ; démarche gratuite (à vérifier au moment du dépôt) | [S10] | [ ] |
+| 4 | Dans la déclaration : choisir le versement libératoire (si éligible) et la périodicité des déclarations (mensuelle ou trimestrielle) | Versement libératoire : condition de revenu fiscal à vérifier | [S19] | [ ] |
+| 5 | Demander l'ACRE si éligible | Conditions modifiées en 2026 ; probablement pas pour un salarié (à vérifier) | [S20] | [ ] |
+| 6 | Recevoir le SIREN ; créer l'espace sur autoentrepreneur.urssaf.fr et l'espace professionnel impots.gouv.fr | — | [S19] | [ ] |
+| 7 | Ouvrir un compte bancaire dédié | Recommandé dès le début ; obligatoire si le CA dépasse 10 000 € deux années de suite (à vérifier) | — | [ ] |
+| 8 | Souscrire la RC pro | Avant la première mission ; couvrir conseil et formation | — | [ ] |
+| 9 | Choisir une plateforme agréée de facturation électronique | Réception obligatoire depuis le 01/09/2026 pour toute entreprise | [S4] [S5] | [ ] |
+| 10 | Déclaration initiale de CFE 1447-C-SD | Au plus tard le 31/12 de l'année de création (31/12/2027 si début en 2027) | [S6] [S7] | [ ] |
+| 11 | Déclaration d'activité de formation (DREETS) | Seulement si de la formation est facturée : dans les 3 mois suivant la 1re convention (à vérifier) | [S12] | [ ] |
+| 12 | Attestation d'exonération de TVA formation (3511-SD) | Uniquement si l'exonération est visée et la déclaration d'activité faite | [S11] | [ ] |
 
-## 2. Calendrier récurrent (une fois immatriculée)
+## 2. Calendrier récurrent
 
-### 2.1 TVA selon le régime retenu
-
-| Régime | Conditions / seuils (services) | Déclarations | Mentions facture | Source |
-|---|---|---|---|---|
-| Franchise en base | CA N-1 ≤ 37 500 € ; perte immédiate si dépassement de 41 250 € en cours d'année. Applicable de droit l'année de création sauf seuil majoré atteint ; seuils proratisés en début d'activité (modalités exactes à vérifier) | Aucune déclaration de TVA | « TVA non applicable, art. 293 B du CGI » (référence à vérifier : codification de la TVA dans le CIBS en cours [S14]) | [S1] [S2] |
-| Réel simplifié (RSI) | Supprimé au 01/01/2027 (loi de finances 2025, art. 38). Dernière CA12 (exercice civil 2026) au plus tard le 04/05/2027 ; pas d'acompte en 2027 pour les exercices civils | Sans objet pour OPSESOL sauf création et option avant le 31/12/2026 (déconseillé : 1er acompte de décembre fixé par l'entreprise, à 80 % mini de la TVA réelle, puis CA12) | — | [S3] [S13] |
-| Réel normal | Obligatoire au-delà des seuils de franchise, ou sur option. À partir de 2027 : CA3 trimestrielle si CA N-1 ≤ 1 000 000 € ; mensuelle sur option ou au-delà | CA3 (3310-CA3) trimestrielle ou mensuelle ; dates exactes dans l'espace professionnel (à vérifier) | TVA 20 % ; n° TVA intracommunautaire | [S3] |
-| Formation exonérée (art. 261-4-4° a du CGI) | Cumulable avec un autre régime pour le reste de l'activité ; nécessite déclaration d'activité + attestation 3511-SD | Selon le régime principal | Mention d'exonération (formulation exacte à vérifier) | [S11] |
-
-### 2.2 IS (clôture au 31/12)
+### 2.1 Cotisations Urssaf
 
 | Échéance | Obligation | Remarque | Source |
 |---|---|---|---|
-| 15/03, 15/06, 15/09, 15/12 | Acomptes d'IS | Aucun pendant le 1er exercice (société nouvelle). Le 1er acompte de l'exercice suivant peut être reporté au 2e si la liasse n'est pas encore échue | [S8] [S15] |
-| 2e jour ouvré après le 1er mai (+15 jours si télédéclaration, à vérifier) | Liasse fiscale 2065 + 2033 (régime simplifié d'imposition) ou 2050 | Télédéclaration par l'expert-comptable | [S16] |
-| 15/05 | Relevé de solde 2572 et paiement du solde | 15 du 4e mois après la clôture ; télédéclaration obligatoire | [S8] |
-| — | Taux réduit 15 % jusqu'à 42 500 € de bénéfice (puis 25 %, à vérifier) | Conditions : CA < 10 M€, capital entièrement libéré, détenu à 75 % au moins par des personnes physiques. Plafond proratisé si l'exercice ≠ 12 mois | [S8] |
+| Chaque mois ou chaque trimestre (selon le choix) | Déclarer le CA encaissé et payer les cotisations sur autoentrepreneur.urssaf.fr | 25,6 % du CA en 2026 (BNC) + formation professionnelle ~0,2 % (à vérifier) ; déclarer même un CA nul ; dates exactes dans l'espace (à vérifier) | [S19] |
+| Même échéance | Versement libératoire de l'impôt, si choisi | ~2,2 % du CA (à vérifier) | [S19] |
 
-### 2.3 CFE
+### 2.2 Impôt sur le revenu
 
 | Échéance | Obligation | Remarque | Source |
 |---|---|---|---|
-| 31/12 de l'année de création | Déclaration initiale 1447-C-SD | Y demander les éventuelles exonérations dès la 1re année | [S6] [S7] |
+| Mai-juin (déclaration annuelle des revenus) | Déclarer le CA de l'année sur la 2042-C-PRO | Même avec le versement libératoire. Sans lui : imposition au barème après abattement de 34 % (à vérifier), avec le salaire | [S15] |
+
+### 2.3 TVA
+
+| Situation | Règle | Mentions facture | Source |
+|---|---|---|---|
+| CA de l'année précédente ≤ 37 500 € et CA de l'année ≤ 41 250 € | Franchise en base : pas de TVA, pas de déclaration | « TVA non applicable, art. 293 B du CGI » (référence à surveiller, codification en cours [S14]) | [S1] [S2] |
+| CA de l'année > 41 250 € | TVA due dès le jour du dépassement : demander un n° de TVA, facturer 20 %, déclarer ; on reste micro-entrepreneur | TVA 20 %, n° TVA intracommunautaire | [S2] [S21] |
+| Après la sortie de la franchise | Réel normal, déclaration CA3 (le régime simplifié disparaît au 01/01/2027) ; périodicité à vérifier | — | [S3] |
+| Formation exonérée | Déclaration d'activité + attestation 3511-SD | Mention d'exonération (formulation à vérifier) | [S11] |
+
+**Prévision** : la franchise tient pendant l'année de test (~4 500 € de CA). La première année à temps plein (~51 000 €) la dépasserait en cours d'année.
+
+### 2.4 CFE
+
+| Échéance | Obligation | Remarque | Source |
+|---|---|---|---|
+| 31/12 de l'année de création | Déclaration initiale 1447-C-SD | Y demander les exonérations éventuelles | [S6] [S7] |
 | Année de création | Pas de CFE | — | [S6] |
-| 15/12 de l'année N+1 | 1er paiement de CFE | Base réduite de 50 % la 1re année d'imposition (création d'établissement) ; exonération de la cotisation minimum si CA ≤ 5 000 € (CA N-1 pour une entreprise nouvelle, ramené à 12 mois) | [S6] [S7] |
+| 15/12 de l'année suivante | 1er paiement | Base réduite de 50 % la 1re année d'imposition ; exonération de la cotisation minimum si CA ≤ 5 000 € (à vérifier) | [S6] [S7] |
 
-### 2.4 Comptes annuels
+### 2.5 Tenue et plafonds
 
-| Échéance | Obligation | Remarque | Source |
+| Quand | Obligation | Remarque | Source |
 |---|---|---|---|
-| Clôture + 6 mois (30/06) | Approbation des comptes par l'associé unique | En SASU dont l'associé unique personne physique est président, le dépôt des comptes signés vaut approbation. Délai de 6 mois à confirmer dans les statuts | [S17] |
-| Approbation + 1 mois (2 mois en ligne), 7 mois max après clôture | Dépôt au greffe | Option de confidentialité des comptes pour les micro-entreprises : à vérifier | [S17] |
+| À chaque encaissement | Livre des recettes `suivi/recettes.md` | Obligatoire ; registre des achats en plus | [S19] |
+| Chaque trimestre | Vérifier le CA cumulé | Plafond 83 600 €/an en 2026 ; alerte à 80 % (~67 000 €) | [S22] |
 
-### 2.5 Social
+## 3. 90 prochains jours (28/10/2026 – 25/01/2027)
 
-| Échéance | Obligation | Source |
-|---|---|---|
-| Aucune tant que le président n'est pas rémunéré | Ni déclaration Urssaf ni cotisations | [S18] |
-| Mensuelle dès le 1er salaire | DSN chaque mois, y compris les mois sans rémunération | [S18] |
-
-### 2.6 Conséquences d'un premier exercice long (ex. immatriculation fin 2026, clôture au 31/12/2027)
-
-| Point | Conséquence | Source |
-|---|---|---|
-| Durée autorisée | Le 1er exercice peut être clos au plus tard le 31/12 de l'année suivant la création : clôture au 31/12/2027 possible | [S15] |
-| Déclaration de résultat | Une seule liasse couvrant création → 31/12/2027, due début mai 2028 (calcul : 03/05/2028, ou 18/05/2028 en télédéclaration, à vérifier) ; solde d'IS au 15/05/2028 | [S8] [S16] |
-| Taux réduit IS | Plafond de 42 500 € proratisé : exemple 14 mois → 42 500 × 14/12 = 49 583 €. Règle d'appréciation par année civile en l'absence de bilan : à vérifier avec l'expert-comptable | [S8] |
-| Acomptes IS | Aucun en 2027 ; premiers acomptes en 2028 | [S8] |
-| Comptes | Approbation avant le 30/06/2028, dépôt au greffe juillet-août 2028 | [S17] |
-| CFE | Indépendante de l'exercice : année civile de création exonérée, 1447-C-SD avant le 31/12 de cette année | [S6] |
-| TVA | Indépendante de l'exercice (année civile) | [S2] [S3] |
-| Inconvénients | Premiers comptes tardifs (moins de visibilité pour la banque et les clients), période longue sans bilan | — |
-
-## 3. 90 prochains jours (21/10/2026 – 19/01/2027)
-
-### 3.1 Échéances légales
-
-| Date | Échéance | S'applique à OPSESOL ? | Source |
+| Date | Échéance | Pour OPSESOL | Source |
 |---|---|---|---|
-| 15/12/2026 | Paiement CFE | Non : société non créée (et exonérée l'année de création) | [S6] |
-| 15/12/2026 | Acompte IS | Non : 1er exercice dispensé | [S8] |
-| Décembre 2026 | Acompte TVA RSI | Non, sauf option RSI dès 2026 (déconseillé) | [S3] [S13] |
-| 31/12/2026 | Déclaration CFE 1447-C-SD | Oui, uniquement si l'immatriculation intervient en 2026 | [S6] [S7] |
-| 01/01/2027 | Suppression du RSI TVA ; bascule automatique en réel normal trimestriel des redevables RSI | Indirect : conditionne le choix du régime au moment de l'immatriculation | [S3] |
-| Dès l'immatriculation | Capacité à recevoir des factures électroniques (obligation en vigueur depuis le 01/09/2026) | Oui : choisir une plateforme agréée dès la création | [S4] [S5] |
-| 01/09/2027 (hors période) | Émission des factures électroniques et e-reporting pour les PME et micro-entreprises | À préparer | [S4] [S5] |
+| 15/12/2026 | CFE | Non : entreprise non créée | [S6] |
+| 31/12/2026 | Déclaration CFE 1447-C-SD | Seulement si le début d'activité est en 2026 (déconseillé) | [S6] [S7] |
+| 01/01/2027 | Fin du régime simplifié de TVA | Sans effet tant que vous êtes en franchise | [S3] |
+| Dès le début d'activité | Réception des factures électroniques | Choisir une plateforme agréée | [S4] [S5] |
 
-Conclusion : aucune échéance déclarative ou de paiement ne tombe avant immatriculation. Seule obligation possible
-dans la période : la 1447-C-SD avant le 31/12/2026 si la société est immatriculée en 2026.
+**Conseil : déclarer le début d'activité en janvier 2027.** La CFE ne serait due qu'en décembre 2028 et la déclaration initiale avant le 31/12/2027. La création étant gratuite et rapide, il n'y a rien à gagner à la faire plus tôt tant que le contrat n'est pas vérifié.
 
-### 3.2 Décision à prendre en novembre : immatriculer en 2026 ou en janvier 2027
-
-| Critère | Immatriculation décembre 2026 | Immatriculation janvier 2027 |
-|---|---|---|
-| CFE | Exonérée 2026 (quelques semaines) ; 1er paiement 15/12/2027 ; 1447-C-SD avant le 31/12/2026 | Exonérée 2027 ; 1er paiement 15/12/2028 ; 1447-C-SD avant le 31/12/2027 |
-| 1er exercice | Clôture 31/12/2027 (13-14 mois) | Clôture 31/12/2027 (≈ 12 mois) |
-| TVA | Franchise de droit en 2026 ; régime 2027 à définir (RSI supprimé) | Pas d'interférence avec la suppression du RSI |
-| Calendrier personnel (4 h/semaine) | Rythme serré, fêtes de fin d'année | Plus confortable |
-
-Pas de prospection possible avant levée du prérequis : immatriculer tôt ne génère pas de CA plus tôt. À valider avec l'expert-comptable.
-
-### 3.3 Planning de création (4 h/semaine ≈ 50 h sur la période)
-
-| Semaines | Période | Actions (≈ 4 h/semaine) |
-|---|---|---|
-| S43-S44 | 21/10 – 01/11 | Demander 2-3 devis d'expert-comptable ; lister les questions (objet social, TVA, clôture, date d'immatriculation) |
-| S45-S46 | 02/11 – 15/11 | Choisir l'expert-comptable ; trancher la date d'immatriculation (3.2) ; demander les devis RC pro et banque pro ; choisir la domiciliation |
-| S47-S48 | 16/11 – 29/11 | Rédiger / faire relire les statuts ; fixer le capital ; comparer les plateformes agréées de facturation électronique |
-| S49-S50 | 30/11 – 13/12 | Ouvrir le compte pro et déposer le capital ; signer les statuts ; commander l'annonce légale |
-| S51-S52 | 14/12 – 27/12 | Si immatriculation 2026 : dossier guichet unique + bénéficiaires effectifs, puis 1447-C-SD avant le 31/12. Sinon : préparer le dossier (période de fêtes, charge réduite) |
-| S53-S03 | 28/12 – 19/01 | Si immatriculation 2027 : dépôt guichet unique début janvier. Ensuite : Kbis, déblocage des fonds, espace professionnel impots.gouv.fr, souscription RC pro, activation de la plateforme de facturation électronique |
-
-Risque : si la vérification du contrat de travail révèle une clause d'exclusivité, l'immatriculation elle-même peut
-devoir être reportée ; traiter la priorité 1 de `suivi/taches.md` en parallèle.
+| Semaines | À faire (≈ 4 h/semaine) |
+|---|---|
+| Fin oct. – nov. | Relecture du contrat de travail (priorité 1) ; prendre rendez-vous pour une consultation d'expert-comptable ; devis RC pro |
+| Déc. | Choisir l'adresse, la banque et la plateforme de facturation électronique ; préparer la déclaration sur le guichet unique |
+| Janv. 2027 | Déclarer le début d'activité ; ouvrir le compte dédié ; souscrire la RC pro ; créer les espaces Urssaf et impots.gouv.fr |
 
 ## Points à vérifier
 
-| Point | Pourquoi |
-|---|---|
-| Modalités de prorata des seuils de franchise l'année de création | Formulation non confirmée sur une page officielle complète |
-| Référence légale de la mention de franchise (art. 293 B du CGI ou article du CIBS) | Recodification de la TVA dans le CIBS en cours [S14] |
-| Dates exactes des CA3 trimestrielles à partir de 2027 | À lire dans l'espace professionnel |
-| Délai de 15 jours supplémentaires pour la liasse IS télédéclarée et date 2028 | Non confirmé pour les sociétés à l'IS hors SCI |
-| Taux normal d'IS 25 % | Non revérifié |
-| Imposition d'un exercice de plus de 12 mois chevauchant deux années civiles | Règle d'appréciation du plafond 42 500 € par année civile à confirmer |
-| Délai de 3 mois pour la déclaration d'activité de formation | Source secondaire seulement |
-| Délai de 6 mois pour l'approbation en SAS(U) | Infogreffe se contredit selon les pages ; dépend des statuts |
-| Confidentialité des comptes déposés au greffe | Non recherché sur source officielle |
-| Domiciliation au domicile du président | Bail / copropriété |
+- Taux de formation professionnelle (0,2 %) et taux du versement libératoire (2,2 %), et la condition de revenu fiscal du versement libératoire.
+- Votre éligibilité à l'ACRE en étant salarié (conditions 2026).
+- L'abattement de 34 % pour les BNC.
+- La gratuité de la déclaration sur le guichet unique au moment du dépôt.
+- L'obligation de compte bancaire dédié (seuil de 10 000 €).
+- Les dates exactes des déclarations Urssaf mensuelles ou trimestrielles.
 
-## Sources (consultées le 21/10/2026)
+## Sources (consultées les 21 et 28/10/2026)
 
 | Réf. | Source |
 |---|---|
 | S1 | impots.gouv.fr, Les régimes d'imposition à la TVA : https://www.impots.gouv.fr/professionnel/les-regimes-dimposition-la-tva |
-| S2 | BOFiP, BOI-TVA-DECLA-40-10-10-20260701 (franchise en base) : https://bofip.impots.gouv.fr/bofip/849-PGP.html/identifiant=BOI-TVA-DECLA-40-10-10-20260701 |
+| S2 | BOFiP, franchise en base : https://bofip.impots.gouv.fr/bofip/849-PGP.html/identifiant=BOI-TVA-DECLA-40-10-10-20260701 |
 | S3 | impots.gouv.fr, Le RSI TVA est supprimé à compter du 01/01/2027 : https://www.impots.gouv.fr/actualite/le-regime-simplifie-dimposition-la-tva-est-supprime-compter-du-1er-janvier-2027 |
-| S4 | economie.gouv.fr, Tout savoir sur la facturation électronique : https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises |
-| S5 | impots.gouv.fr, Guide pratique de démarrage au 01/09/2026 : https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf et FAQ : https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq---fe_je-decouvre-la-facturation-electronique.pdf |
-| S6 | impots.gouv.fr, Fiche CET-IFER 2026 : https://www.impots.gouv.fr/sites/default/files/media/3_Documentation/depliants/pro_fiche_cet-ifer_2026.pdf ; BOFiP BOI-IF-CFE-30-20 : https://bofip.impots.gouv.fr/bofip/2223-PGP.html/identifiant=BOI-IF-CFE-30-20-20121213 |
-| S7 | Notice 1447-C 2026 : https://www.impots.gouv.fr/sites/default/files/formulaires/1447-c-sd/2026/1447-c-sd_5570.pdf ; cotisation minimum : https://bofip.impots.gouv.fr/bofip/9617-PGP.html/identifiant=BOI-IF-CFE-20-20-40-10-20190626 ; https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/tout-savoir-sur-la-cotisation-fonciere-des-entreprises-cfe |
-| S8 | BOFiP taux réduit IS : https://bofip.impots.gouv.fr/bofip/2065-PGP.html/identifiant=BOI-IS-LIQ-20-20-20230621 ; acomptes / sociétés nouvelles : https://bofip.impots.gouv.fr/bofip/3564-PGP.html/identifiant=BOI-IS-DECLA-20-30-20200610 ; notice 2572 : https://www.impots.gouv.fr/sites/default/files/formulaires/2572-sd/2025/2572-sd_4906.pdf ; https://www.impots.gouv.fr/professionnel/imposition-des-resultats |
-| S9 | Bpifrance Création, Formalités de création d'une SA ou SAS : https://bpifrance-creation.fr/encyclopedie/formalites-creation-dune-entreprise/formalites-specifiques-a-creation-societes-0 (source para-publique) |
-| S10 | Guichet unique : https://formalites.entreprises.gouv.fr/preparer.php ; economie.gouv.fr, statuts : https://www.economie.gouv.fr/entreprises/creer-une-entreprise/creation-dentreprise-quand-et-comment-rediger-les-statuts |
-| S11 | Formulaire 3511-SD : https://www.impots.gouv.fr/formulaire/3511-sd/demande-dattestation-au-titre-dactivites-sinscrivant-dans-le-cadre-de-la-fpc ; BOFiP enseignement : https://bofip.impots.gouv.fr/bofip/943-PGP.html/identifiant=BOI-TVA-CHAMP-30-10-20-50-20191016 |
-| S12 | Centre Inffo (secondaire) : https://www.centre-inffo.fr/?p=198333 ; fiche entreprendre.service-public.fr citée par ces sources, non consultée directement (site inaccessible) |
-| S13 | impots.gouv.fr, 1er acompte RSI : https://www.impots.gouv.fr/professionnel/questions/je-suis-soumis-au-regime-simplifie-dimposition-la-tva-quelle-date-dois-je |
-| S14 | BOFiP, dispositions transitoires codification TVA dans le CIBS : https://bofip.impots.gouv.fr/bofip/14901-PGP.html/identifiant=BOI-RES-TVA-000253-20261007 |
-| S15 | impots.gouv.fr, Résultat imposable IR ou IS : https://www.impots.gouv.fr/professionnel/resultat-imposable-limpot-sur-le-revenu-ir-ou-limpot-sur-les-societes |
-| S16 | Notice 2033 (2026) : https://www.impots.gouv.fr/sites/default/files/formulaires/2033-sd/2026/2033-sd_5395.pdf ; calendrier fiscal : https://www.impots.gouv.fr/professionnel/calendrier-fiscal |
-| S17 | Infogreffe, dépôt des comptes : https://www.infogreffe.fr/dossiers-thematiques/vie-de-l-entreprise/gerer-l-entreprise/l-obligation-de-depot-des-comptes-sociaux-annuels |
-| S18 | Urssaf, Créer une société : https://www.urssaf.fr/accueil/choisir-forme-juridique/creer-societe.html |
+| S4 | economie.gouv.fr, facturation électronique : https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises |
+| S5 | impots.gouv.fr, guide pratique : https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf |
+| S6 | impots.gouv.fr, fiche CET-IFER 2026 : https://www.impots.gouv.fr/sites/default/files/media/3_Documentation/depliants/pro_fiche_cet-ifer_2026.pdf |
+| S7 | Notice 1447-C 2026 : https://www.impots.gouv.fr/sites/default/files/formulaires/1447-c-sd/2026/1447-c-sd_5570.pdf |
+| S10 | Guichet unique : https://formalites.entreprises.gouv.fr/preparer.php |
+| S11 | Formulaire 3511-SD : https://www.impots.gouv.fr/formulaire/3511-sd/demande-dattestation-au-titre-dactivites-sinscrivant-dans-le-cadre-de-la-fpc |
+| S12 | Centre Inffo (secondaire) : https://www.centre-inffo.fr/?p=198333 |
+| S14 | BOFiP, codification de la TVA dans le CIBS : https://bofip.impots.gouv.fr/bofip/14901-PGP.html/identifiant=BOI-RES-TVA-000253-20261007 |
+| S15 | impots.gouv.fr, résultat imposable IR ou IS : https://www.impots.gouv.fr/professionnel/resultat-imposable-limpot-sur-le-revenu-ir-ou-limpot-sur-les-societes |
+| S19 | Urssaf, taux des auto-entrepreneurs 2026 : https://www.urssaf.fr/accueil/actualites/taux-cotisations-autoentrepeneur.html ; l'essentiel du statut : https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html |
+| S20 | Urssaf, ACRE : https://www.urssaf.fr/accueil/exoneration-acre-createur.html ; taux réduits : https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| S21 | impots.gouv.fr, micro-entrepreneur et TVA : https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva |
+| S22 | economie.gouv.fr, dépassement du seuil : https://www.economie.gouv.fr/entreprises/gerer-sa-micro-entreprise/micro-entreprise-que-se-passe-t-il-quand-le-seuil-de-chiffre-daffaires-est-depasse |
 
-Note : entreprendre.service-public.fr et impots.gouv.fr n'étaient pas accessibles en lecture directe depuis l'outil ;
-les informations proviennent des extraits de recherche de ces sites.
-
-À valider avec l'expert-comptable.
+À valider avec l'Urssaf ou un expert-comptable.

@@ -2,19 +2,19 @@
 
 **Verdict: Profitable**
 
-- ✓ Each jour facturé earns $554.00 before fixed costs (92% contribution).
-- ✓ Year 1 operating profit: $1,815.
+- ✓ Each jour facturé earns $386.00 before fixed costs (64% contribution).
+- ✓ Year 1 operating profit: $1,695.
 - ✓ Break-even is 1 jour facturés a day against a capacity of 2.
 
 | key number | |
 | --- | ---: |
 | Price | $600.00 a jour facturé |
-| Profit margin at plan | 60% per jour facturé |
+| Profit margin at plan | 48% per jour facturé |
 | Break-even | 1 jour facturés a day |
-| Year 1 operating profit | $1,815 |
-| Startup spend | $1,540 |
-| Cash needed before it pays for itself | $1,930 |
-| Startup money earned back | month 12 |
+| Year 1 operating profit | $1,695 |
+| Startup spend | $850 |
+| Cash needed before it pays for itself | $1,050 |
+| Startup money earned back | month 10 |
 
 ## The idea
 
@@ -22,16 +22,16 @@
 - Who it is for: transporteurs citerne / vrac liquide de taille moyenne (PME et ETI) sans responsable d'exploitation senior en interne ; en second, chargeurs chimie / pétrochimie de l'axe Seine, cabinets de conseil logistique généralistes (sous-traitance) et écoles / centres de formation transport-logistique du Havre.
 - What it sells, at what price (HT): audit express 1-2 j 550-1 100 € ; audit complet 3-5 j 1 800-3 500 € ; formation d'équipe 800-1 200 €/jour ; mission de transition TJM 500-700 € ; jour ad hoc 500-700 € ; interventions en école 450-650 €/jour (hypothèse). Plancher : 500 €/jour.
 - Where and how: Le Havre et 30 km (axe Seine Le Havre – Rouen) en présentiel, le reste à distance. Clients trouvés par le réseau professionnel, LinkedIn, fédérations (TLF, AUTF), salons, et un diagnostic opérationnel gratuit en 25 questions comme outil d'appel. Livré par le fondateur seul.
-- Budget and constraints: SASU en création (immatriculation visée décembre 2026 ou janvier 2027). Besoin de démarrage estimé 2 500 à 4 500 € (ordinateur, RC pro, site, flyer, logiciels, trésorerie de précaution), autofinancé. Le fondateur garde un emploi salarié à temps plein dans le même secteur et dispose d'environ 4 h par semaine en année 1 (7 h en année 2). Aucune prospection tant que la compatibilité avec ce contrat de travail (exclusivité, non-concurrence, loyauté) n'est pas vérifiée. Objectif : 3 500 € net par mois à terme (environ 4 500 € de CA, 7 à 9 jours facturés par mois).
+- Budget and constraints: Micro-entreprise (entreprise individuelle, BNC) à déclarer en janvier 2027, création gratuite. Besoin de démarrage estimé ~850 € plus une trésorerie de précaution (ordinateur, RC pro, site, flyer, logiciels, trésorerie de précaution), autofinancé. Le fondateur garde un emploi salarié à temps plein dans le même secteur et dispose d'environ 4 h par semaine en année 1 (7 h en année 2). Aucune prospection tant que la compatibilité avec ce contrat de travail (exclusivité, non-concurrence, loyauté) n'est pas vérifiée. Objectif : 3 500 € net par mois à terme (environ 4 500 € de CA, 7 à 9 jours facturés par mois).
 
 ## Summary
 
-**OPSESOL est une SASU en création au Havre qui vend un diagnostic d'exploitation à prix fixe (Check-up Exploitation Citerne, 1 200 € HT) aux transporteurs citerne et vrac liquide sans responsable d'exploitation senior à temps plein.** Le fondateur a plus de 20 ans d'exploitation dans ce secteur, travaille encore à temps plein et vise à quitter son poste d'ici octobre 2027.
+**OPSESOL est une micro-entreprise à créer au Havre (janvier 2027) qui vend un diagnostic d'exploitation à prix fixe (Check-up Exploitation Citerne, 1 200 € HT) aux transporteurs citerne et vrac liquide sans responsable d'exploitation senior à temps plein.** Le fondateur a plus de 20 ans d'exploitation dans ce secteur, travaille encore à temps plein et vise à quitter son poste d'ici octobre 2027.
 
 **Verdict calculé : Rentable, mais pas encore viable comme revenu principal.** Les trois chiffres :
-- chaque jour facturé laisse **554 €** après ses frais directs (92 %) ;
-- seuil de rentabilité : **0,35 jour facturé par mois** (l'outil arrondit à 1), pour une capacité de 2 ;
-- année de test : **1 815 €** de résultat d'exploitation sur 4 500 € de CA (base prudente à 600 €/jour ; 2 715 € au prix du Check-up, garantie jouée 1 fois sur 10).
+- chaque jour facturé laisse **386 €** après frais directs, cotisations et impôt (64 %) ;
+- seuil de rentabilité : **0,26 jour facturé par mois** (l'outil arrondit à 1), pour une capacité de 2 ;
+- année de test : **1 695 € nets** pour vous sur 4 500 € de CA (base prudente à 600 €/jour ; ~2 340 € au prix du Check-up, garantie jouée 1 fois sur 10).
 
 Le verdict ne porte que sur les chiffres : **aucun panel d'acheteurs n'a tourné**, donc le contrôle « assez d'acheteurs achètent » n'a pas été fait. Aucune vente réelle ne confirme encore la demande.
 
@@ -39,7 +39,7 @@ Le verdict ne porte que sur les chiffres : **aucun panel d'acheteurs n'a tourné
 
 **Le plus gros risque : le contrat de travail**, dont une clause d'exclusivité ou de non-concurrence peut bloquer l'activité maintenant et après le départ. Réponse : relecture du contrat, avocat si besoin, test de conflit pour chaque prospect, et aucune prospection avant.
 
-**Pour démarrer : ~1 930 € de trésorerie** (creux au mois 2), et un premier test réel : **3 Check-up pilotes à 900 € HT** auprès de transporteurs qui passent le test de conflit. Pour vivre de l'activité, il faut ~11 jours facturés par mois et environ 17 500 € d'épargne ou d'allocations pour la première année à temps plein (`founder/transition.md`).
+**Pour démarrer : ~1 050 € de trésorerie** (creux au mois 2 ; création gratuite), et un premier test réel : **3 Check-up pilotes à 900 € HT** auprès de transporteurs qui passent le test de conflit. Pour vivre de l'activité, il faut ~10 jours facturés par mois et environ 14 000 € d'épargne ou d'allocations pour la première année à temps plein (`founder/transition.md`).
 
 **Cette semaine : remplir la grille de relecture du contrat de travail**, en notant la durée, la zone et l'activité de la clause de non-concurrence.
 
@@ -273,11 +273,15 @@ Un check-up mobilise environ 1,5 jour de travail (2 h d'entretien, analyse et r�
 
 **La garantie, modélisée** : avec 1 client sur 10 qui la fait jouer (hypothèse prudente pour un premier lancement), le revenu moyen tombe à 1 080 € par check-up, soit **720 €/jour**.
 
-| Scénario (outil CFO, `--price`) | Résultat d'exploitation, année de test | Année à temps plein |
+En micro-entreprise, les cotisations et l'impôt (28 % du CA au total, à vérifier) suivent le prix. Net pour vous par jour de travail : 600 € ⇒ 386 € ; 720 € ⇒ ~472 € ; 800 € ⇒ ~530 €.
+
+| Scénario (micro-entreprise, net pour vous) | Année de test (7,5 jours) | Année à temps plein (85 jours) |
 |---|---:|---:|
-| Plan actuel, 600 €/jour | 1 815 € | 41 150 € |
-| Check-up avec garantie jouée 1 fois sur 10 : 720 €/jour | **2 715 €** | **51 350 €** |
-| Check-up sans garantie jouée : 800 €/jour | 3 315 € | 58 150 € |
+| Plan actuel, 600 €/jour | 1 695 € | 28 010 € |
+| Check-up avec garantie jouée 1 fois sur 10 : 720 €/jour | **~2 340 €** | **~35 350 €** |
+| Check-up sans garantie jouée : 800 €/jour | ~2 775 € | ~40 250 € |
+
+Calcul : jours × (prix × 0,72 − 46 € de frais) − frais fixes annuels (1 200 € en test, 4 800 € à temps plein). Les chiffres à 600 € viennent de l'outil CFO.
 
 Les 3 tarifs pilotes (900 € au lieu de 1 200 €) coûtent 900 € de CA au total : c'est le prix de 3 références écrites. La garantie reste abordable même jouée 3 fois sur 10 (revenu moyen 840 €, soit 560 €/jour, proche du plan actuel).
 
@@ -306,46 +310,44 @@ La probabilité perçue reste le maillon faible tant qu'il n'y a pas de vraie r�
 
 ## The numbers
 
-> Montants en **euros HT** (l'outil affiche « $ » : lire « € »). Unité : **1 jour facturé**. L'outil compte en « par jour » :
-> ici **1 « jour » de l'outil = 1 mois**, donc « 1 a day » se lit « 1 jour facturé par mois ». Les arrondis de l'outil
-> affichent « 1 » là où le calcul exact donne moins (voir le seuil ci-dessous). TVA en sus selon le régime choisi.
+> Montants en **euros HT** (l'outil affiche « $ » : lire « € »). Unité : **1 jour facturé**, à 600 € (base prudente).
+> **1 « jour » de l'outil = 1 mois** : « 1 a day » se lit « 1 jour facturé par mois ». L'outil arrondit le seuil à 1.
+> En micro-entreprise, les cotisations (25,6 % + 0,2 %) et l'impôt en versement libératoire (2,2 %) sont des frais
+> par jour facturé : le « résultat » ci-dessous est donc **ce qui vous reste en poche**, cotisations et impôt payés.
 
-**La conclusion : OPSESOL ne perd pas d'argent, mais ne peut pas atteindre votre objectif de revenu tant que vous êtes salarié à temps plein.**
+**La conclusion : en micro-entreprise, chaque jour facturé vous laisse 386 €, et l'année de test environ 1 695 € nets, disponibles au fil de l'eau.**
 
-- **La marge.** Chaque jour facturé à 600 € laisse **554 €** après ses frais directs (92 %). À 1 jour par mois, la marge nette après tous les frais fixes est de **60 %**.
-- **Le seuil de rentabilité.** Frais fixes : 195 €/mois, soit **0,35 jour facturé par mois** (195 ÷ 554). Le risque financier est quasi nul.
-- **L'année 1** (7,5 jours facturés au total, de 0 à 1 jour par mois) : **4 500 € de CA, 1 815 € de résultat d'exploitation, 275 € après les frais de création** (1 540 €). La mise de départ est remboursée au mois 12.
-- **La trésorerie à prévoir : 1 930 €** avant que l'activité se finance seule (le creux arrive au mois 2).
-- **Ce qui vous revient.** Président non rémunéré, résultat versé en dividendes : IS 15 % puis prélèvement forfaitaire ~30 % (taux à vérifier) ⇒ environ **59,5 %** du résultat. Année 1 : 1 815 × 0,85 × 0,70 ≈ **1 080 € net sur l'année, soit ~90 €/mois.**
+- **La marge.** Sur 600 € facturés : 46 € de frais directs, 154,80 € de cotisations, 13,20 € d'impôt ⇒ **386 €** (64 %).
+- **Le seuil de rentabilité.** Frais fixes : 100 €/mois (pas d'expert-comptable obligatoire) ⇒ **0,26 jour facturé par mois** (100 ÷ 386).
+- **L'année de test** (7,5 jours facturés) : **4 500 € de CA, 1 695 € nets**, 845 € après les 850 € de frais de lancement (immatriculation gratuite). Mise de départ remboursée au **mois 10**.
+- **La trésorerie à prévoir : 1 050 €** (le creux arrive au mois 2).
+- **Comparaison SASU** (même hypothèse) : ~1 080 € nets, et seulement après l'approbation des comptes.
 
-### La ligne à surveiller : le volume, pas les coûts
+### La ligne à surveiller : le volume
 
-- Volume −20 % : résultat année 1 **984 €** et frais de création **pas remboursés** dans l'année.
-- Coûts unitaires +15 % : 1 763 € (presque rien ne bouge). Vos frais sont trop faibles pour être le levier.
-- **Votre objectif de 3 500 € net/mois** demande ~5 880 € de résultat par mois (3 500 ÷ 0,595), soit **~11 jours facturés par mois** ((5 880 + 195) ÷ 554). Votre capacité actuelle est d'environ **2 jours par mois** (16 h). L'écart est un facteur 5 : il ne se comble ni par le prix ni par les coûts, seulement par le temps disponible.
+- Volume −20 % : 1 116 € nets sur l'année de test. Coûts unitaires +15 % : 1 454 €.
+- **Votre objectif de 3 500 € net/mois** demande (3 500 + 400 de frais fixes à temps plein) ÷ 386 ≈ **10 jours facturés par mois**, soit ~72 700 € de CA par an : sous le plafond de 83 600 €, avec peu de marge.
 
-### Trois façons d'améliorer le résultat (calculées avec l'outil)
+### Trois façons d'améliorer le résultat (outil, `--volume`)
 
-| Action | Ce qui change | Résultat d'exploitation année 1 |
+| Action | Ce qui change | Net année de test |
 |---|---|---:|
-| Base : 600 €/jour, 7,5 jours | — | 1 815 € |
-| Passer le prix moyen à **700 €/jour** (diagnostic à prix fixe) | +100 €/jour | **2 565 €** (+750 €) |
-| Passer le prix moyen à **800 €/jour** | +200 €/jour | **3 315 €** (+1 500 €) |
-| Facturer **2 jours par mois** dès le début (capacité maximale) | volume ×2 | **5 970 €** (+4 155 €) |
-
-Point de cohérence de votre grille : **l'audit complet à 1 800 € pour 5 jours revient à 360 €/jour**, sous votre plancher de 500 €. À 600 €/jour, le minimum est 3 000 € ; un forfait de 3 000 à 3 500 € est cohérent.
+| Base : 600 €/jour, 7,5 jours | — | 1 695 € |
+| Facturer 2 jours par mois dès le début | volume ×2 | **4 590 €** |
+| Vendre le Check-up (≈ 800 €/jour de travail) | prix +33 % | plus élevé ; à recalculer avec des cotisations proportionnelles (l'outil ne les ajuste pas avec `--price`) |
+| Vérifier le droit au versement libératoire | sinon impôt au barème, sur 66 % du CA, à votre taux marginal | à calculer avec votre avis d'imposition |
 
 ### Les conditions financières du conseil
 
-- [x] **Plan recalé sur la capacité réelle (5 à 10 jours en année 1)** : fait, 7,5 jours.
-- [ ] **Une garantie que le budget peut supporter** : à chiffrer avec `/founder-offer`.
-- [ ] **Preuve de demande** : aucune vente réelle encore ; la rampe ci-dessous est une hypothèse, pas une mesure.
+- [x] Plan recalé sur la capacité réelle (5 à 10 jours en année de test) : 7,5 jours.
+- [ ] Garantie chiffrée : faite dans `founder/offer.md`, à reprendre en micro.
+- [ ] Preuve de demande : aucune vente réelle ; la rampe est une hypothèse.
 
-Tous les frais fixes et les frais de création sont des **estimations** (détail : `founder/cfo-sources.md`). Un expert-comptable doit valider la structure, la fiscalité des dividendes et le régime de TVA avant tout engagement. Ceci n'est pas un conseil financier, fiscal ou juridique.
+Hypothèses et sources : `founder/cfo-sources.md`. Ce n'est pas un conseil financier, fiscal ou social : un expert-comptable (consultation ponctuelle) et l'Urssaf doivent confirmer les taux et votre éligibilité au versement libératoire et à l'ACRE.
 
 ---
 
-## Unit economics: OPSESOL (SASU) — diagnostic et audit d'exploitation citerne / vrac liquide. Montants en euros HT. Ici, 1 « jour » du rapport = 1 MOIS : days_per_month = 1, donc « units a day » se lit « jours facturés par mois ».
+## Unit economics: OPSESOL (micro-entreprise) — Check-up et audits d'exploitation citerne / vrac liquide. Euros HT. 1 « jour » de l'outil = 1 MOIS (days_per_month = 1) : « units a day » se lit « jours facturés par mois ». Cotisations et impôt sont comptés par jour facturé à 600 € : un what-if --price ne les ajuste pas.
 
 Every number below comes from the input file. Nothing is looked up or guessed.
 
@@ -354,48 +356,50 @@ Every number below comes from the input file. Nothing is looked up or guessed.
 | line | per jour facturé |
 | --- | ---: |
 | Price | $600.00 |
-| Déplacement par jour d'intervention (ESTIMATION : ~60 km aller-retour, barème kilométrique ~0,60 €/km) | -$36.00 |
-| Petits frais par mission (impression, repas) (ESTIMATION) | -$10.00 |
-| **Contribution** (what each jour facturé leaves to pay the fixed costs) | **$554.00** (92%) |
+| Déplacement par jour d'intervention (ESTIMATION : ~60 km aller-retour, ~0,60 €/km) | -$36.00 |
+| Petits frais par mission (ESTIMATION) | -$10.00 |
+| Cotisations sociales micro-entreprise 25,6 % + formation professionnelle 0,2 % du CA (urssaf.fr 2026 ; 0,2 % à vérifier) | -$154.80 |
+| Impôt sur le revenu en versement libératoire 2,2 % du CA (si éligible, à vérifier) | -$13.20 |
+| **Contribution** (what each jour facturé leaves to pay the fixed costs) | **$386.00** (64%) |
 
 ### The margin that matters
 
-Fixed costs: $195 a month (Expert-comptable SASU (ESTIMATION, devis à obtenir) $120, Assurance RC pro (ESTIMATION ~300 €/an, devis à obtenir) $25, Banque pro (ESTIMATION) $15, Plateforme de facturation électronique (ESTIMATION) $15, Logiciels, téléphone, nom de domaine (ESTIMATION, business plan : 150-250 €/an + téléphone) $20).
+Fixed costs: $100 a month (Consultation ponctuelle d'un expert-comptable (ESTIMATION ~300 €/an) $25, Assurance RC pro (ESTIMATION ~300 €/an, devis à obtenir) $25, Compte bancaire dédié (ESTIMATION) $15, Plateforme de facturation électronique (ESTIMATION) $15, Logiciels, téléphone, nom de domaine (ESTIMATION) $20).
 
 - **Break-even: 1 jour facturés a day.** Below that you lose money every month.
-- **Profit margin at your plan** (1 a day): **60%** of every sale, after every cost.
+- **Profit margin at your plan** (1 a day): **48%** of every sale, after every cost.
 - Capacity: 2 a day.
 
 ### Year 1, month by month
 
-| month | jour facturés a day | revenue | profit | cumulative (after $1,540 startup) |
+| month | jour facturés a day | revenue | profit | cumulative (after $850 startup) |
 | ---: | ---: | ---: | ---: | ---: |
-| 1 | 0 | $0 | -$195 | -$1,735 |
-| 2 | 0 | $0 | -$195 | -$1,930 |
-| 3 | 0 | $300 | $82 | -$1,848 |
-| 4 | 0 | $300 | $82 | -$1,766 |
-| 5 | 1 | $600 | $359 | -$1,407 |
-| 6 | 0 | $300 | $82 | -$1,325 |
-| 7 | 0 | $0 | -$195 | -$1,520 |
-| 8 | 1 | $600 | $359 | -$1,161 |
-| 9 | 1 | $600 | $359 | -$802 |
-| 10 | 1 | $600 | $359 | -$443 |
-| 11 | 1 | $600 | $359 | -$84 |
-| 12 | 1 | $600 | $359 | $275 |
+| 1 | 0 | $0 | -$100 | -$950 |
+| 2 | 0 | $0 | -$100 | -$1,050 |
+| 3 | 0 | $300 | $93 | -$957 |
+| 4 | 0 | $300 | $93 | -$864 |
+| 5 | 1 | $600 | $286 | -$578 |
+| 6 | 0 | $300 | $93 | -$485 |
+| 7 | 0 | $0 | -$100 | -$585 |
+| 8 | 1 | $600 | $286 | -$299 |
+| 9 | 1 | $600 | $286 | -$13 |
+| 10 | 1 | $600 | $286 | $273 |
+| 11 | 1 | $600 | $286 | $559 |
+| 12 | 1 | $600 | $286 | $845 |
 
-- **Year 1 operating profit: $1,815** on $4,500 of revenue.
-- After the $1,540 startup spend: $275.
-- Startup money earned back: month 12.
-- Cash you need before it pays for itself: **$1,930**.
+- **Year 1 operating profit: $1,695** on $4,500 of revenue.
+- After the $850 startup spend: $845.
+- Startup money earned back: month 10.
+- Cash you need before it pays for itself: **$1,050**.
 
 ### What if
 
 | scenario | margin at plan | break-even a day | year 1 profit |
 | --- | ---: | ---: | ---: |
-| Base plan | 60% | 1 | $1,815 |
-| Price -10% | 55% | 1 | $1,365 |
-| Volume -20% | 52% | 1 | $984 |
-| Unit costs +15% | 59% | 1 | $1,763 |
+| Base plan | 48% | 1 | $1,695 |
+| Price -10% | 42% | 1 | $1,245 |
+| Volume -20% | 44% | 1 | $1,116 |
+| Unit costs +15% | 42% | 1 | $1,454 |
 
 No red flags in these numbers. They are only as good as the inputs: check every cost against a real quote.
 
